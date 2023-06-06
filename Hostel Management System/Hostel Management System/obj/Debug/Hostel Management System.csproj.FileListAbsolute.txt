@@ -1,0 +1,11 @@
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\bin\Debug\Hostel Management System.exe.config
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\bin\Debug\Hostel Management System.exe
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\bin\Debug\Hostel Management System.pdb
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel Management System.csproj.AssemblyReference.cache
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel Management System.csproj.SuggestedBindingRedirects.cache
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel_Management_System.Form1.resources
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel_Management_System.Properties.Resources.resources
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel Management System.csproj.GenerateResource.cache
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel Management System.csproj.CoreCompileInputs.cache
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel Management System.exe
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel Management System.pdb
