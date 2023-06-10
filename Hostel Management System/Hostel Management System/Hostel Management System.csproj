@@ -46,16 +46,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="hostel form\Assign Room.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="hostel form\Assign Room.Designer.cs">
+      <DependentUpon>Assign Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hostel form\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hostel form\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="hostel form\Register New Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hostel form\Register New Staff.Designer.cs">
+      <DependentUpon>Register New Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hostel form\Register student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hostel form\Register student.Designer.cs">
+      <DependentUpon>Register student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hostel form\Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hostel form\Room.Designer.cs">
+      <DependentUpon>Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hostel form\Visitor Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hostel form\Visitor Entry.Designer.cs">
+      <DependentUpon>Visitor Entry.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="hostel form\Assign Room.resx">
+      <DependentUpon>Assign Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hostel form\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +108,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="hostel form\Register New Staff.resx">
+      <DependentUpon>Register New Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hostel form\Register student.resx">
+      <DependentUpon>Register student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hostel form\Room.resx">
+      <DependentUpon>Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hostel form\Visitor Entry.resx">
+      <DependentUpon>Visitor Entry.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

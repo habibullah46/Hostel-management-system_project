@@ -3,9 +3,15 @@ C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\bin\Debug\Hostel Management System.pdb
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel Management System.csproj.AssemblyReference.cache
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel Management System.csproj.SuggestedBindingRedirects.cache
-C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel_Management_System.Form1.resources
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel_Management_System.Properties.Resources.resources
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel Management System.csproj.GenerateResource.cache
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel Management System.csproj.CoreCompileInputs.cache
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel Management System.exe
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel Management System.pdb
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel_Management_System.Assign_Room.resources
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel_Management_System.Login.resources
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel_Management_System.Register_New_Staff.resources
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel_Management_System.Register_student.resources
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel_Management_System.Room.resources
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel_Management_System.Visitor_Entry.resources
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Hostel Management System\Hostel Management System\obj\Debug\Hostel_Management_System.main.resources
