@@ -32,9 +32,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_ = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_CNIC = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -82,13 +82,13 @@
             this.panel1.Size = new System.Drawing.Size(794, 109);
             this.panel1.TabIndex = 25;
             // 
-            // textBox2
+            // txt_
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox2.Location = new System.Drawing.Point(185, 206);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 26);
-            this.textBox2.TabIndex = 30;
+            this.txt_.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_.Location = new System.Drawing.Point(185, 206);
+            this.txt_.Name = "txt_";
+            this.txt_.Size = new System.Drawing.Size(200, 26);
+            this.txt_.TabIndex = 30;
             // 
             // label3
             // 
@@ -101,13 +101,13 @@
             this.label3.TabIndex = 32;
             this.label3.Text = "Name:";
             // 
-            // textBox1
+            // txt_CNIC
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.Location = new System.Drawing.Point(185, 148);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 26);
-            this.textBox1.TabIndex = 29;
+            this.txt_CNIC.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_CNIC.Location = new System.Drawing.Point(185, 148);
+            this.txt_CNIC.Name = "txt_CNIC";
+            this.txt_CNIC.Size = new System.Drawing.Size(200, 26);
+            this.txt_CNIC.TabIndex = 29;
             // 
             // label2
             // 
@@ -252,9 +252,9 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt_);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_CNIC);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -274,9 +274,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_CNIC;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
