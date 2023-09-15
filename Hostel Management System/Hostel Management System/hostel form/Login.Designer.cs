@@ -29,28 +29,30 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_Password = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.btn_Clear = new System.Windows.Forms.Button();
+            this.btn_Login = new System.Windows.Forms.Button();
+            this.txt_UserName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chk_password = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox3
+            // txt_Password
             // 
-            this.textBox3.Location = new System.Drawing.Point(291, 207);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(164, 26);
-            this.textBox3.TabIndex = 43;
+            this.txt_Password.Location = new System.Drawing.Point(291, 207);
+            this.txt_Password.Name = "txt_Password";
+            this.txt_Password.Size = new System.Drawing.Size(164, 26);
+            this.txt_Password.TabIndex = 43;
+            this.txt_Password.UseSystemPasswordChar = true;
             // 
             // label7
             // 
@@ -62,40 +64,40 @@
             this.label7.TabIndex = 50;
             this.label7.Text = "Password:";
             // 
-            // button2
+            // btn_Clear
             // 
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(368, 262);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 50);
-            this.button2.TabIndex = 49;
-            this.button2.Text = "Clear";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_Clear.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Clear.Image = ((System.Drawing.Image)(resources.GetObject("btn_Clear.Image")));
+            this.btn_Clear.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Clear.Location = new System.Drawing.Point(368, 253);
+            this.btn_Clear.Name = "btn_Clear";
+            this.btn_Clear.Size = new System.Drawing.Size(114, 58);
+            this.btn_Clear.TabIndex = 49;
+            this.btn_Clear.Text = "Clear";
+            this.btn_Clear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Clear.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn_Login
             // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(247, 262);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 50);
-            this.button1.TabIndex = 48;
-            this.button1.Text = "Login";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_Login.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Login.Image = ((System.Drawing.Image)(resources.GetObject("btn_Login.Image")));
+            this.btn_Login.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Login.Location = new System.Drawing.Point(247, 253);
+            this.btn_Login.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Login.Name = "btn_Login";
+            this.btn_Login.Size = new System.Drawing.Size(116, 58);
+            this.btn_Login.TabIndex = 48;
+            this.btn_Login.Text = "Login";
+            this.btn_Login.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Login.UseVisualStyleBackColor = true;
+            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
-            // textBox5
+            // txt_UserName
             // 
-            this.textBox5.Location = new System.Drawing.Point(291, 146);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(164, 26);
-            this.textBox5.TabIndex = 42;
+            this.txt_UserName.Location = new System.Drawing.Point(291, 146);
+            this.txt_UserName.Name = "txt_UserName";
+            this.txt_UserName.Size = new System.Drawing.Size(164, 26);
+            this.txt_UserName.TabIndex = 42;
             // 
             // label6
             // 
@@ -121,6 +123,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 317);
             this.panel2.Name = "panel2";
@@ -137,15 +140,16 @@
             this.panel1.Size = new System.Drawing.Size(633, 109);
             this.panel1.TabIndex = 37;
             // 
-            // checkBox1
+            // chk_password
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(477, 209);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(148, 24);
-            this.checkBox1.TabIndex = 51;
-            this.checkBox1.Text = "Show Password";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chk_password.AutoSize = true;
+            this.chk_password.Location = new System.Drawing.Point(477, 209);
+            this.chk_password.Name = "chk_password";
+            this.chk_password.Size = new System.Drawing.Size(148, 24);
+            this.chk_password.TabIndex = 51;
+            this.chk_password.Text = "Show Password";
+            this.chk_password.UseVisualStyleBackColor = true;
+            this.chk_password.CheckedChanged += new System.EventHandler(this.chk_password_CheckedChanged);
             // 
             // pictureBox1
             // 
@@ -157,25 +161,39 @@
             this.pictureBox1.TabIndex = 52;
             this.pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(411, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(199, 19);
+            this.label2.TabIndex = 51;
+            this.label2.Text = "Hostel Management System";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(633, 370);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.chk_password);
+            this.Controls.Add(this.txt_Password);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.btn_Clear);
+            this.Controls.Add(this.btn_Login);
+            this.Controls.Add(this.txt_UserName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.MaximumSize = new System.Drawing.Size(655, 426);
             this.MinimumSize = new System.Drawing.Size(655, 426);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -186,16 +204,17 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_Password;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button btn_Clear;
+        private System.Windows.Forms.Button btn_Login;
+        private System.Windows.Forms.TextBox txt_UserName;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chk_password;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
     }
 }

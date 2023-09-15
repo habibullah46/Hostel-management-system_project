@@ -27,5 +27,6 @@ namespace Hostel_Management_System.helper
             SqlCommand cmd = new SqlCommand(querry, con);
             cmd.ExecuteNonQuery();
         }
+     
     }
 }

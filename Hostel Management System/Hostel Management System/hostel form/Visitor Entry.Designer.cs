@@ -32,21 +32,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txt_ = new System.Windows.Forms.TextBox();
+            this.txt_VName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_CNIC = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.cmd_Visittime = new System.Windows.Forms.DateTimePicker();
+            this.txt_VisitRelation = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_name = new System.Windows.Forms.TextBox();
+            this.txt_Sname = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_SCNIC = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_clear = new System.Windows.Forms.Button();
+            this.btn_save = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -82,13 +82,13 @@
             this.panel1.Size = new System.Drawing.Size(794, 109);
             this.panel1.TabIndex = 25;
             // 
-            // txt_
+            // txt_VName
             // 
-            this.txt_.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_.Location = new System.Drawing.Point(185, 206);
-            this.txt_.Name = "txt_";
-            this.txt_.Size = new System.Drawing.Size(200, 26);
-            this.txt_.TabIndex = 30;
+            this.txt_VName.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_VName.Location = new System.Drawing.Point(185, 206);
+            this.txt_VName.Name = "txt_VName";
+            this.txt_VName.Size = new System.Drawing.Size(200, 26);
+            this.txt_VName.TabIndex = 2;
             // 
             // label3
             // 
@@ -107,7 +107,7 @@
             this.txt_CNIC.Location = new System.Drawing.Point(185, 148);
             this.txt_CNIC.Name = "txt_CNIC";
             this.txt_CNIC.Size = new System.Drawing.Size(200, 26);
-            this.txt_CNIC.TabIndex = 29;
+            this.txt_CNIC.TabIndex = 1;
             // 
             // label2
             // 
@@ -142,28 +142,28 @@
             this.label5.TabIndex = 36;
             this.label5.Text = "Visitor Relation:";
             // 
-            // dateTimePicker1
+            // cmd_Visittime
             // 
-            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dateTimePicker1.Location = new System.Drawing.Point(185, 264);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
-            this.dateTimePicker1.TabIndex = 37;
+            this.cmd_Visittime.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cmd_Visittime.Location = new System.Drawing.Point(185, 264);
+            this.cmd_Visittime.Name = "cmd_Visittime";
+            this.cmd_Visittime.Size = new System.Drawing.Size(200, 26);
+            this.cmd_Visittime.TabIndex = 3;
             // 
-            // textBox3
+            // txt_VisitRelation
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox3.Location = new System.Drawing.Point(185, 322);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 26);
-            this.textBox3.TabIndex = 38;
+            this.txt_VisitRelation.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_VisitRelation.Location = new System.Drawing.Point(185, 322);
+            this.txt_VisitRelation.Name = "txt_VisitRelation";
+            this.txt_VisitRelation.Size = new System.Drawing.Size(200, 26);
+            this.txt_VisitRelation.TabIndex = 4;
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox1.Controls.Add(this.txt_name);
+            this.groupBox1.Controls.Add(this.txt_Sname);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.txt_SCNIC);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Location = new System.Drawing.Point(448, 141);
             this.groupBox1.Name = "groupBox1";
@@ -172,13 +172,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Student Details To Whome Visiting";
             // 
-            // txt_name
+            // txt_Sname
             // 
-            this.txt_name.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_name.Location = new System.Drawing.Point(110, 103);
-            this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(180, 26);
-            this.txt_name.TabIndex = 34;
+            this.txt_Sname.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_Sname.Location = new System.Drawing.Point(110, 103);
+            this.txt_Sname.Name = "txt_Sname";
+            this.txt_Sname.Size = new System.Drawing.Size(180, 26);
+            this.txt_Sname.TabIndex = 6;
             // 
             // label7
             // 
@@ -191,13 +191,13 @@
             this.label7.TabIndex = 35;
             this.label7.Text = "Name:";
             // 
-            // textBox4
+            // txt_SCNIC
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox4.Location = new System.Drawing.Point(110, 50);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(180, 26);
-            this.textBox4.TabIndex = 32;
+            this.txt_SCNIC.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_SCNIC.Location = new System.Drawing.Point(110, 50);
+            this.txt_SCNIC.Name = "txt_SCNIC";
+            this.txt_SCNIC.Size = new System.Drawing.Size(180, 26);
+            this.txt_SCNIC.TabIndex = 5;
             // 
             // label6
             // 
@@ -210,34 +210,35 @@
             this.label6.TabIndex = 33;
             this.label6.Text = "CNIC:";
             // 
-            // button2
+            // btn_clear
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(272, 383);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 50);
-            this.button2.TabIndex = 41;
-            this.button2.Text = "Clear";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_clear.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_clear.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_clear.Image = ((System.Drawing.Image)(resources.GetObject("btn_clear.Image")));
+            this.btn_clear.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_clear.Location = new System.Drawing.Point(272, 383);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(102, 50);
+            this.btn_clear.TabIndex = 8;
+            this.btn_clear.Text = "Clear";
+            this.btn_clear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_clear.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn_save
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(151, 383);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 50);
-            this.button1.TabIndex = 40;
-            this.button1.Text = "Save";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_save.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_save.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
+            this.btn_save.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_save.Location = new System.Drawing.Point(151, 383);
+            this.btn_save.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(95, 50);
+            this.btn_save.TabIndex = 7;
+            this.btn_save.Text = "Save";
+            this.btn_save.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // Visitor_Entry
             // 
@@ -245,14 +246,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(794, 520);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_clear);
+            this.Controls.Add(this.btn_save);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.txt_VisitRelation);
+            this.Controls.Add(this.cmd_Visittime);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txt_);
+            this.Controls.Add(this.txt_VName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_CNIC);
             this.Controls.Add(this.label2);
@@ -274,20 +275,20 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txt_;
+        private System.Windows.Forms.TextBox txt_VName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_CNIC;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.DateTimePicker cmd_Visittime;
+        private System.Windows.Forms.TextBox txt_VisitRelation;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_SCNIC;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txt_name;
+        private System.Windows.Forms.TextBox txt_Sname;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_clear;
+        private System.Windows.Forms.Button btn_save;
     }
 }

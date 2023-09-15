@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Room));
             this.label7 = new System.Windows.Forms.Label();
             this.btn_clear = new System.Windows.Forms.Button();
@@ -42,9 +43,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cmd_florr = new System.Windows.Forms.ComboBox();
-            this.txt_numberr = new System.Windows.Forms.TextBox();
+            this.txt_AvailableSeats = new System.Windows.Forms.TextBox();
             this.btn_save = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -52,7 +55,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(48, 392);
+            this.label7.Location = new System.Drawing.Point(37, 326);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(108, 19);
             this.label7.TabIndex = 34;
@@ -64,7 +67,7 @@
             this.btn_clear.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_clear.Image = ((System.Drawing.Image)(resources.GetObject("btn_clear.Image")));
             this.btn_clear.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_clear.Location = new System.Drawing.Point(243, 437);
+            this.btn_clear.Location = new System.Drawing.Point(238, 436);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(102, 50);
             this.btn_clear.TabIndex = 7;
@@ -79,7 +82,7 @@
             this.cmd_washroom.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.cmd_washroom.Location = new System.Drawing.Point(187, 321);
+            this.cmd_washroom.Location = new System.Drawing.Point(176, 260);
             this.cmd_washroom.Name = "cmd_washroom";
             this.cmd_washroom.Size = new System.Drawing.Size(164, 28);
             this.cmd_washroom.TabIndex = 4;
@@ -94,7 +97,7 @@
             "3",
             "4",
             "5"});
-            this.cmd_type.Location = new System.Drawing.Point(187, 259);
+            this.cmd_type.Location = new System.Drawing.Point(176, 200);
             this.cmd_type.Name = "cmd_type";
             this.cmd_type.Size = new System.Drawing.Size(164, 28);
             this.cmd_type.TabIndex = 3;
@@ -104,7 +107,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(48, 330);
+            this.label5.Location = new System.Drawing.Point(37, 267);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(133, 19);
             this.label5.TabIndex = 30;
@@ -115,7 +118,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(48, 206);
+            this.label3.Location = new System.Drawing.Point(37, 149);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 19);
             this.label3.TabIndex = 28;
@@ -124,7 +127,7 @@
             // txt_seatRent
             // 
             this.txt_seatRent.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_seatRent.Location = new System.Drawing.Point(187, 383);
+            this.txt_seatRent.Location = new System.Drawing.Point(176, 320);
             this.txt_seatRent.Name = "txt_seatRent";
             this.txt_seatRent.Size = new System.Drawing.Size(164, 26);
             this.txt_seatRent.TabIndex = 5;
@@ -134,11 +137,11 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(48, 144);
+            this.label2.Location = new System.Drawing.Point(37, 385);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 19);
+            this.label2.Size = new System.Drawing.Size(117, 19);
             this.label2.TabIndex = 25;
-            this.label2.Text = "Number:";
+            this.label2.Text = "Available Seats:";
             // 
             // label1
             // 
@@ -146,7 +149,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(149, 32);
+            this.label1.Location = new System.Drawing.Point(138, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(156, 60);
             this.label1.TabIndex = 0;
@@ -157,7 +160,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(48, 268);
+            this.label4.Location = new System.Drawing.Point(37, 208);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 19);
             this.label4.TabIndex = 29;
@@ -167,9 +170,9 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 522);
+            this.panel2.Location = new System.Drawing.Point(0, 508);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(401, 53);
+            this.panel2.Size = new System.Drawing.Size(378, 53);
             this.panel2.TabIndex = 23;
             // 
             // panel1
@@ -179,7 +182,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(401, 109);
+            this.panel1.Size = new System.Drawing.Size(378, 109);
             this.panel1.TabIndex = 21;
             // 
             // cmd_florr
@@ -192,18 +195,18 @@
             "3rd",
             "4th",
             "sth"});
-            this.cmd_florr.Location = new System.Drawing.Point(187, 197);
+            this.cmd_florr.Location = new System.Drawing.Point(176, 140);
             this.cmd_florr.Name = "cmd_florr";
             this.cmd_florr.Size = new System.Drawing.Size(164, 28);
             this.cmd_florr.TabIndex = 2;
             // 
-            // txt_numberr
+            // txt_AvailableSeats
             // 
-            this.txt_numberr.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_numberr.Location = new System.Drawing.Point(187, 137);
-            this.txt_numberr.Name = "txt_numberr";
-            this.txt_numberr.Size = new System.Drawing.Size(164, 26);
-            this.txt_numberr.TabIndex = 1;
+            this.txt_AvailableSeats.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_AvailableSeats.Location = new System.Drawing.Point(176, 378);
+            this.txt_AvailableSeats.Name = "txt_AvailableSeats";
+            this.txt_AvailableSeats.Size = new System.Drawing.Size(164, 26);
+            this.txt_AvailableSeats.TabIndex = 5;
             // 
             // btn_save
             // 
@@ -211,7 +214,7 @@
             this.btn_save.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
             this.btn_save.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_save.Location = new System.Drawing.Point(127, 437);
+            this.btn_save.Location = new System.Drawing.Point(122, 436);
             this.btn_save.Margin = new System.Windows.Forms.Padding(2);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(95, 50);
@@ -221,14 +224,18 @@
             this.btn_save.UseVisualStyleBackColor = true;
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Room
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(401, 575);
+            this.ClientSize = new System.Drawing.Size(378, 561);
             this.Controls.Add(this.btn_save);
-            this.Controls.Add(this.txt_numberr);
+            this.Controls.Add(this.txt_AvailableSeats);
             this.Controls.Add(this.cmd_florr);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btn_clear);
@@ -245,6 +252,7 @@
             this.Text = "Room";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,7 +272,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox cmd_florr;
-        private System.Windows.Forms.TextBox txt_numberr;
+        private System.Windows.Forms.TextBox txt_AvailableSeats;
         private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

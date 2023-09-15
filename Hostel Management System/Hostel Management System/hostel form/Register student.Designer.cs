@@ -93,6 +93,7 @@
             this.button1.Text = "Save";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txt_registrationdate
             // 
@@ -276,6 +277,8 @@
             this.txt_cnic.Name = "txt_cnic";
             this.txt_cnic.Size = new System.Drawing.Size(180, 26);
             this.txt_cnic.TabIndex = 1;
+            this.txt_cnic.Tag = "";
+            this.txt_cnic.WordWrap = false;
             // 
             // label2
             // 

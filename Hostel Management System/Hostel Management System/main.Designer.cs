@@ -60,6 +60,7 @@
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
+            this.searchVisitorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -179,11 +180,13 @@
             this.asignRoomToolStripMenuItem.Name = "asignRoomToolStripMenuItem";
             this.asignRoomToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.asignRoomToolStripMenuItem.Text = "Asign Room";
+            this.asignRoomToolStripMenuItem.Click += new System.EventHandler(this.asignRoomToolStripMenuItem_Click);
             // 
             // visitorToolStripMenuItem
             // 
             this.visitorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addVisitorToolStripMenuItem});
+            this.addVisitorToolStripMenuItem,
+            this.searchVisitorToolStripMenuItem});
             this.visitorToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.visitorToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("visitorToolStripMenuItem.Image")));
             this.visitorToolStripMenuItem.Name = "visitorToolStripMenuItem";
@@ -211,13 +214,13 @@
             // changePasswordToolStripMenuItem
             // 
             this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(237, 34);
             this.changePasswordToolStripMenuItem.Text = "Change Password";
             // 
             // aboutSoftwareToolStripMenuItem
             // 
             this.aboutSoftwareToolStripMenuItem.Name = "aboutSoftwareToolStripMenuItem";
-            this.aboutSoftwareToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.aboutSoftwareToolStripMenuItem.Size = new System.Drawing.Size(237, 34);
             this.aboutSoftwareToolStripMenuItem.Text = "About Software";
             // 
             // toolStrip1
@@ -333,6 +336,12 @@
             this.toolStripButton6.Text = "LogOut";
             this.toolStripButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
+            // searchVisitorToolStripMenuItem
+            // 
+            this.searchVisitorToolStripMenuItem.Name = "searchVisitorToolStripMenuItem";
+            this.searchVisitorToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.searchVisitorToolStripMenuItem.Text = "Search Visitor";
+            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -385,5 +394,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButton5;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripButton toolStripButton6;
+        private System.Windows.Forms.ToolStripMenuItem searchVisitorToolStripMenuItem;
     }
 }

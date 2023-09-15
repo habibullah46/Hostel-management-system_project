@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace Hostel_Management_System
 {
@@ -43,6 +45,26 @@ namespace Hostel_Management_System
             Visitor_Entry VE = new Visitor_Entry(); 
             VE.MdiParent = this;    
             VE.Show();
+        }
+        private  void Clear(Form form)
+        {
+            foreach (var item in form.Controls)
+            {
+                if(item is TextBox)
+                {
+                    TextBox txt = (TextBox)item;
+                    txt.Clear();
+                }
+
+            }
+        }
+
+        private void asignRoomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            Assign_Room AR = new Assign_Room();
+            AR.MdiParent = this;
+            AR.Show();
         }
     }
 }
