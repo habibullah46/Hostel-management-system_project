@@ -57,9 +57,9 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(984, 100);
@@ -67,6 +67,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -78,9 +79,9 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.ForeColor = System.Drawing.SystemColors.Window;
             this.panel2.Location = new System.Drawing.Point(0, 448);
             this.panel2.Name = "panel2";
@@ -89,6 +90,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Location = new System.Drawing.Point(636, 30);
@@ -99,6 +101,7 @@
             // 
             // cmb_Visitor_cnic
             // 
+            this.cmb_Visitor_cnic.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmb_Visitor_cnic.FormattingEnabled = true;
             this.cmb_Visitor_cnic.Location = new System.Drawing.Point(417, 169);
             this.cmb_Visitor_cnic.Name = "cmb_Visitor_cnic";
@@ -107,6 +110,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(291, 169);
@@ -117,6 +121,7 @@
             // 
             // txt_Visitor_name
             // 
+            this.txt_Visitor_name.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_Visitor_name.Location = new System.Drawing.Point(417, 220);
             this.txt_Visitor_name.Name = "txt_Visitor_name";
             this.txt_Visitor_name.Size = new System.Drawing.Size(200, 26);
@@ -124,6 +129,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(293, 219);
@@ -134,6 +140,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(293, 269);
@@ -144,6 +151,7 @@
             // 
             // txt_VRelation
             // 
+            this.txt_VRelation.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_VRelation.Location = new System.Drawing.Point(417, 318);
             this.txt_VRelation.Name = "txt_VRelation";
             this.txt_VRelation.Size = new System.Drawing.Size(200, 26);
@@ -151,6 +159,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(293, 319);
@@ -161,6 +170,7 @@
             // 
             // txt_timedate
             // 
+            this.txt_timedate.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_timedate.Location = new System.Drawing.Point(417, 269);
             this.txt_timedate.Name = "txt_timedate";
             this.txt_timedate.Size = new System.Drawing.Size(200, 26);
@@ -168,6 +178,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox1.Controls.Add(this.txt_Studentname);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.cmd_studentCNIC);
@@ -182,6 +193,7 @@
             // 
             // txt_Studentname
             // 
+            this.txt_Studentname.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_Studentname.Location = new System.Drawing.Point(81, 41);
             this.txt_Studentname.Name = "txt_Studentname";
             this.txt_Studentname.Size = new System.Drawing.Size(200, 26);
@@ -189,6 +201,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(19, 44);
@@ -199,6 +212,7 @@
             // 
             // cmd_studentCNIC
             // 
+            this.cmd_studentCNIC.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmd_studentCNIC.FormattingEnabled = true;
             this.cmd_studentCNIC.ItemHeight = 19;
             this.cmd_studentCNIC.Location = new System.Drawing.Point(81, 86);
@@ -208,6 +222,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(17, 92);
@@ -218,6 +233,7 @@
             // 
             // btn_Clear
             // 
+            this.btn_Clear.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Clear.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Clear.Image = ((System.Drawing.Image)(resources.GetObject("btn_Clear.Image")));
@@ -232,6 +248,7 @@
             // 
             // btn_save
             // 
+            this.btn_save.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_save.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
@@ -246,6 +263,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 106);
             this.pictureBox1.Name = "pictureBox1";
@@ -273,8 +291,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.MaximumSize = new System.Drawing.Size(1006, 563);
-            this.MinimumSize = new System.Drawing.Size(1006, 563);
             this.Name = "Visitor_Entry";
             this.Text = "Visitor_Entry";
             this.panel1.ResumeLayout(false);
