@@ -151,6 +151,7 @@
             this.btn_Clear.Text = "Clear";
             this.btn_Clear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Clear.UseVisualStyleBackColor = true;
+            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
             // label5
             // 
