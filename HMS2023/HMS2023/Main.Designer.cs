@@ -48,6 +48,7 @@
             this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
@@ -61,7 +62,6 @@
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -105,13 +105,13 @@
             // searchStduentToolStripMenuItem
             // 
             this.searchStduentToolStripMenuItem.Name = "searchStduentToolStripMenuItem";
-            this.searchStduentToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.searchStduentToolStripMenuItem.Size = new System.Drawing.Size(310, 34);
             this.searchStduentToolStripMenuItem.Text = "Search Stduent";
             // 
             // editStudentToolStripMenuItem
             // 
             this.editStudentToolStripMenuItem.Name = "editStudentToolStripMenuItem";
-            this.editStudentToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.editStudentToolStripMenuItem.Size = new System.Drawing.Size(310, 34);
             this.editStudentToolStripMenuItem.Text = "Edit Student";
             // 
             // studentToolStripMenuItem1
@@ -136,13 +136,13 @@
             // editStaffToolStripMenuItem
             // 
             this.editStaffToolStripMenuItem.Name = "editStaffToolStripMenuItem";
-            this.editStaffToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.editStaffToolStripMenuItem.Size = new System.Drawing.Size(279, 34);
             this.editStaffToolStripMenuItem.Text = "Edit Staff";
             // 
             // searchStaffToolStripMenuItem
             // 
             this.searchStaffToolStripMenuItem.Name = "searchStaffToolStripMenuItem";
-            this.searchStaffToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.searchStaffToolStripMenuItem.Size = new System.Drawing.Size(279, 34);
             this.searchStaffToolStripMenuItem.Text = "Search Staff";
             // 
             // roomToolStripMenuItem
@@ -159,19 +159,20 @@
             // registerRoomToolStripMenuItem
             // 
             this.registerRoomToolStripMenuItem.Name = "registerRoomToolStripMenuItem";
-            this.registerRoomToolStripMenuItem.Size = new System.Drawing.Size(230, 34);
+            this.registerRoomToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.registerRoomToolStripMenuItem.Text = "Register Room";
+            this.registerRoomToolStripMenuItem.Click += new System.EventHandler(this.registerRoomToolStripMenuItem_Click);
             // 
             // searchRoomToolStripMenuItem
             // 
             this.searchRoomToolStripMenuItem.Name = "searchRoomToolStripMenuItem";
-            this.searchRoomToolStripMenuItem.Size = new System.Drawing.Size(230, 34);
+            this.searchRoomToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.searchRoomToolStripMenuItem.Text = "Search Room";
             // 
             // editRoomToolStripMenuItem
             // 
             this.editRoomToolStripMenuItem.Name = "editRoomToolStripMenuItem";
-            this.editRoomToolStripMenuItem.Size = new System.Drawing.Size(230, 34);
+            this.editRoomToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.editRoomToolStripMenuItem.Text = "Edit Room";
             // 
             // assignRoomToolStripMenuItem
@@ -194,7 +195,7 @@
             // 
             this.addVisitorToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addVisitorToolStripMenuItem.Image")));
             this.addVisitorToolStripMenuItem.Name = "addVisitorToolStripMenuItem";
-            this.addVisitorToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.addVisitorToolStripMenuItem.Size = new System.Drawing.Size(203, 34);
             this.addVisitorToolStripMenuItem.Text = "Add Visitor";
             this.addVisitorToolStripMenuItem.Click += new System.EventHandler(this.addVisitorToolStripMenuItem_Click);
             // 
@@ -217,8 +218,14 @@
             // 
             this.aboutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("aboutToolStripMenuItem.Image")));
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(254, 34);
             this.aboutToolStripMenuItem.Text = "About";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(33, 29);
+            this.toolStripMenuItem1.Text = " ";
             // 
             // toolStripButton4
             // 
@@ -334,12 +341,6 @@
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(131, 6);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(33, 29);
-            this.toolStripMenuItem1.Text = " ";
             // 
             // Main
             // 

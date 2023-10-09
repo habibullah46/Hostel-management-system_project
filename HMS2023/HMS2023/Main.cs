@@ -60,5 +60,12 @@ namespace HMS2023
             VE.MdiParent = this;
             VE.Show();
         }
+
+        private void registerRoomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Room rm = new Room();
+            rm.MdiParent = this;
+            rm.Show();
+        }
     }
 }

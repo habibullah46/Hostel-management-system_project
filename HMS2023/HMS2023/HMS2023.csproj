@@ -34,6 +34,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -84,6 +86,12 @@
     <Compile Include="Registor new staff.Designer.cs">
       <DependentUpon>Registor new staff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room.Designer.cs">
+      <DependentUpon>Room.cs</DependentUpon>
+    </Compile>
     <Compile Include="Visitor Entry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registor new staff.resx">
       <DependentUpon>Registor new staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room.resx">
+      <DependentUpon>Room.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Visitor Entry.resx">
       <DependentUpon>Visitor Entry.cs</DependentUpon>
