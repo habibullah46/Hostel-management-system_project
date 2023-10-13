@@ -29,7 +29,7 @@ namespace HMS2023
             hp.OpenCon();
             hp.NonQuerryExecute(querry);
             hp.CloseCon();
-            MessageBox.Show("Save Record Successfuly!!");
+            My_Message.success("Room");
         }
 
         private void btn_Clear_Click(object sender, EventArgs e)

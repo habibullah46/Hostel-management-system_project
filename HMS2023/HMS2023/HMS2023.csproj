@@ -61,6 +61,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="HelperClass\helper.cs" />
+    <Compile Include="HelperClass\Message.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
