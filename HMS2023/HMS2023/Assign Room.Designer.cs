@@ -44,15 +44,20 @@
             this.btn_save = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cmb_StudentCNIC = new System.Windows.Forms.ComboBox();
-            this.cmb_RoomNo = new System.Windows.Forms.ComboBox();
-            this.hMSDB2023DataSet2 = new HMS2023.HMSDB2023DataSet2();
             this.tblstudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hMSDB2023DataSet2 = new HMS2023.HMSDB2023DataSet2();
+            this.cmb_RoomNo = new System.Windows.Forms.ComboBox();
+            this.tblRoomBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hMSDB2023DataSet3 = new HMS2023.HMSDB2023DataSet3();
             this.tbl_studentTableAdapter = new HMS2023.HMSDB2023DataSet2TableAdapters.tbl_studentTableAdapter();
+            this.tbl_RoomTableAdapter = new HMS2023.HMSDB2023DataSet3TableAdapters.tbl_RoomTableAdapter();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblstudentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblRoomBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -190,6 +195,7 @@
             this.btn_save.Text = "Save";
             this.btn_save.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // pictureBox1
             // 
@@ -214,28 +220,45 @@
             this.cmb_StudentCNIC.TabIndex = 1;
             this.cmb_StudentCNIC.SelectedIndexChanged += new System.EventHandler(this.cmb_StudentCNIC_SelectedIndexChanged);
             // 
-            // cmb_RoomNo
+            // tblstudentBindingSource
             // 
-            this.cmb_RoomNo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cmb_RoomNo.FormattingEnabled = true;
-            this.cmb_RoomNo.Location = new System.Drawing.Point(404, 218);
-            this.cmb_RoomNo.Name = "cmb_RoomNo";
-            this.cmb_RoomNo.Size = new System.Drawing.Size(160, 28);
-            this.cmb_RoomNo.TabIndex = 3;
+            this.tblstudentBindingSource.DataMember = "tbl_student";
+            this.tblstudentBindingSource.DataSource = this.hMSDB2023DataSet2;
             // 
             // hMSDB2023DataSet2
             // 
             this.hMSDB2023DataSet2.DataSetName = "HMSDB2023DataSet2";
             this.hMSDB2023DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // tblstudentBindingSource
+            // cmb_RoomNo
             // 
-            this.tblstudentBindingSource.DataMember = "tbl_student";
-            this.tblstudentBindingSource.DataSource = this.hMSDB2023DataSet2;
+            this.cmb_RoomNo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cmb_RoomNo.DataSource = this.tblRoomBindingSource;
+            this.cmb_RoomNo.DisplayMember = "RoomNumber";
+            this.cmb_RoomNo.FormattingEnabled = true;
+            this.cmb_RoomNo.Location = new System.Drawing.Point(404, 218);
+            this.cmb_RoomNo.Name = "cmb_RoomNo";
+            this.cmb_RoomNo.Size = new System.Drawing.Size(160, 28);
+            this.cmb_RoomNo.TabIndex = 3;
+            this.cmb_RoomNo.SelectedIndexChanged += new System.EventHandler(this.cmb_RoomNo_SelectedIndexChanged);
+            // 
+            // tblRoomBindingSource
+            // 
+            this.tblRoomBindingSource.DataMember = "tbl_Room";
+            this.tblRoomBindingSource.DataSource = this.hMSDB2023DataSet3;
+            // 
+            // hMSDB2023DataSet3
+            // 
+            this.hMSDB2023DataSet3.DataSetName = "HMSDB2023DataSet3";
+            this.hMSDB2023DataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tbl_studentTableAdapter
             // 
             this.tbl_studentTableAdapter.ClearBeforeFill = true;
+            // 
+            // tbl_RoomTableAdapter
+            // 
+            this.tbl_RoomTableAdapter.ClearBeforeFill = true;
             // 
             // Assign_Room
             // 
@@ -267,8 +290,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblstudentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblRoomBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,5 +319,8 @@
         private HMSDB2023DataSet2 hMSDB2023DataSet2;
         private System.Windows.Forms.BindingSource tblstudentBindingSource;
         private HMSDB2023DataSet2TableAdapters.tbl_studentTableAdapter tbl_studentTableAdapter;
+        private HMSDB2023DataSet3 hMSDB2023DataSet3;
+        private System.Windows.Forms.BindingSource tblRoomBindingSource;
+        private HMSDB2023DataSet3TableAdapters.tbl_RoomTableAdapter tbl_RoomTableAdapter;
     }
 }

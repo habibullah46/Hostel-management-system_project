@@ -148,7 +148,7 @@
   <data name="btn_save.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        5QAAAOUBj+WbPAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAANCSURBVFhH7ZZd
+        4wAAAOMBD+bfpwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAANCSURBVFhH7ZZd
         SBRRGIbHLBUvojKSQPCqIhCq6yKI3N3MaiPafqEfrFCwlorCokxBMnV3ZnbXIkUNQ0oXXHewxBsLKgyk
         H7qJwjIoNklzZlsjKtpO3zee3WZnZp3dsiDyhediOOd735k53zkzzLT+DxEmhXGZDzFcfgOlhI78BdWv
         zWJ4Uy9AJsh/yLCWeXT0D4szLYfQoZ/hpkfyDf2OfKH6rO63DZn0Mr44824I/BQTfqlwLh1NXILkXCGI
@@ -4561,7 +4561,16 @@
   <metadata name="hMSDB2023DataSet2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="tblRoomBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1016, 17</value>
+  </metadata>
+  <metadata name="hMSDB2023DataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>780, 17</value>
+  </metadata>
   <metadata name="tbl_studentTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>517, 17</value>
+  </metadata>
+  <metadata name="tbl_RoomTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1266, 17</value>
   </metadata>
 </root>

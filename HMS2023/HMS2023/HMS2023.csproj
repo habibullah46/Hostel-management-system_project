@@ -77,6 +77,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HMSDB2023DataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HMSDB2023DataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSDB2023DataSet31.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +185,17 @@
     </None>
     <None Include="HMSDB2023DataSet2.xss">
       <DependentUpon>HMSDB2023DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDB2023DataSet31.xsc">
+      <DependentUpon>HMSDB2023DataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDB2023DataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HMSDB2023DataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HMSDB2023DataSet31.xss">
+      <DependentUpon>HMSDB2023DataSet31.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
