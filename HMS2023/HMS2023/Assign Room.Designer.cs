@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Assign_Room));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -44,9 +45,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cmb_StudentCNIC = new System.Windows.Forms.ComboBox();
             this.cmb_RoomNo = new System.Windows.Forms.ComboBox();
+            this.hMSDB2023DataSet2 = new HMS2023.HMSDB2023DataSet2();
+            this.tblstudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_studentTableAdapter = new HMS2023.HMSDB2023DataSet2TableAdapters.tbl_studentTableAdapter();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblstudentBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -199,11 +205,14 @@
             // cmb_StudentCNIC
             // 
             this.cmb_StudentCNIC.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cmb_StudentCNIC.DataSource = this.tblstudentBindingSource;
+            this.cmb_StudentCNIC.DisplayMember = "CNIC";
             this.cmb_StudentCNIC.FormattingEnabled = true;
             this.cmb_StudentCNIC.Location = new System.Drawing.Point(404, 126);
             this.cmb_StudentCNIC.Name = "cmb_StudentCNIC";
             this.cmb_StudentCNIC.Size = new System.Drawing.Size(160, 28);
             this.cmb_StudentCNIC.TabIndex = 1;
+            this.cmb_StudentCNIC.SelectedIndexChanged += new System.EventHandler(this.cmb_StudentCNIC_SelectedIndexChanged);
             // 
             // cmb_RoomNo
             // 
@@ -213,6 +222,20 @@
             this.cmb_RoomNo.Name = "cmb_RoomNo";
             this.cmb_RoomNo.Size = new System.Drawing.Size(160, 28);
             this.cmb_RoomNo.TabIndex = 3;
+            // 
+            // hMSDB2023DataSet2
+            // 
+            this.hMSDB2023DataSet2.DataSetName = "HMSDB2023DataSet2";
+            this.hMSDB2023DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblstudentBindingSource
+            // 
+            this.tblstudentBindingSource.DataMember = "tbl_student";
+            this.tblstudentBindingSource.DataSource = this.hMSDB2023DataSet2;
+            // 
+            // tbl_studentTableAdapter
+            // 
+            this.tbl_studentTableAdapter.ClearBeforeFill = true;
             // 
             // Assign_Room
             // 
@@ -238,11 +261,14 @@
             this.Name = "Assign_Room";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Assign_Room";
+            this.Load += new System.EventHandler(this.Assign_Room_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblstudentBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,5 +291,8 @@
         private System.Windows.Forms.ComboBox cmb_StudentCNIC;
         private System.Windows.Forms.ComboBox cmb_RoomNo;
         private System.Windows.Forms.Label label6;
+        private HMSDB2023DataSet2 hMSDB2023DataSet2;
+        private System.Windows.Forms.BindingSource tblstudentBindingSource;
+        private HMSDB2023DataSet2TableAdapters.tbl_studentTableAdapter tbl_studentTableAdapter;
     }
 }

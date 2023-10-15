@@ -25,7 +25,7 @@ namespace HMS2023
         private void btn_save_Click(object sender, EventArgs e)
         {
            
-            string querry = "INSERT INTO tbl_Room VALUES('"+txt_Number.Text+"','"+txt_flour.Text+"','"+cmb_type.Text+"','"+cmb_AttachBAth.Text+"','"+txt_Rentseat.Text+"')";
+            string querry = "INSERT INTO tbl_Room VALUES('"+txt_Number.Text+"','"+txt_flour.Text+"','"+cmb_type.Text+"','"+cmb_AttachBAth.Text+"','"+txt_Rentseat.Text+"','"+txt_Availableseats.Text+"')";
             hp.OpenCon();
             hp.NonQuerryExecute(querry);
             hp.CloseCon();
