@@ -101,6 +101,7 @@
             this.btn_save.Text = "Save";
             this.btn_save.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // txt_dateOFREG
             // 
