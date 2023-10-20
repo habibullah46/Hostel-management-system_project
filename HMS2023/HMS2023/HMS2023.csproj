@@ -62,6 +62,9 @@
     </Compile>
     <Compile Include="HelperClass\helper.cs" />
     <Compile Include="HelperClass\Message.cs" />
+    <Compile Include="HMSDB2023DataSet.cs">
+      <DependentUpon>HMSDB2023DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="HMSDB2023DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

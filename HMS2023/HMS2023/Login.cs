@@ -45,6 +45,13 @@ namespace HMS2023
                 Main m = new Main();
                 m.Show();
             }
+            else
+            {
+                MessageBox.Show("User name or password or not correct");
+                txt_password.Clear();   
+                txt_Username.Clear();
+                txt_Username.Focus();
+            }
         }
     }
 }
