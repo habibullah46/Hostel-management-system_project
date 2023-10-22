@@ -71,15 +71,15 @@
             this.mainformBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.mainformTableAdapter4 = new Presentation.PresentationDataSet7TableAdapters.mainformTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.presentationDataSet8 = new Presentation.PresentationDataSet8();
-            this.mainformBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
-            this.mainformTableAdapter5 = new Presentation.PresentationDataSet8TableAdapters.mainformTableAdapter();
             this.cNICDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dOBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mainformBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.presentationDataSet8 = new Presentation.PresentationDataSet8();
+            this.mainformTableAdapter5 = new Presentation.PresentationDataSet8TableAdapters.mainformTableAdapter();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainformBindingSource3)).BeginInit();
@@ -95,8 +95,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.presentationDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainformBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.presentationDataSet8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainformBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.presentationDataSet8)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -224,7 +224,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(532, 33);
+            this.label7.Location = new System.Drawing.Point(569, 33);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(395, 36);
             this.label7.TabIndex = 0;
@@ -290,7 +290,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(662, 142);
+            this.label9.Location = new System.Drawing.Point(662, 135);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(60, 19);
             this.label9.TabIndex = 18;
@@ -303,7 +303,7 @@
             "Kotli",
             "Pindi",
             "Mirpure"});
-            this.comboBox1.Location = new System.Drawing.Point(738, 138);
+            this.comboBox1.Location = new System.Drawing.Point(738, 131);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(234, 28);
             this.comboBox1.TabIndex = 20;
@@ -328,7 +328,7 @@
             this.btn_search.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_search.Image = ((System.Drawing.Image)(resources.GetObject("btn_search.Image")));
             this.btn_search.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_search.Location = new System.Drawing.Point(1002, 126);
+            this.btn_search.Location = new System.Drawing.Point(1002, 119);
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(109, 51);
             this.btn_search.TabIndex = 22;
@@ -428,26 +428,12 @@
             this.addressDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.mainformBindingSource5;
-            this.dataGridView1.Location = new System.Drawing.Point(508, 183);
+            this.dataGridView1.Location = new System.Drawing.Point(508, 176);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(958, 404);
             this.dataGridView1.TabIndex = 25;
-            // 
-            // presentationDataSet8
-            // 
-            this.presentationDataSet8.DataSetName = "PresentationDataSet8";
-            this.presentationDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // mainformBindingSource5
-            // 
-            this.mainformBindingSource5.DataMember = "mainform";
-            this.mainformBindingSource5.DataSource = this.presentationDataSet8;
-            // 
-            // mainformTableAdapter5
-            // 
-            this.mainformTableAdapter5.ClearBeforeFill = true;
             // 
             // cNICDataGridViewTextBoxColumn
             // 
@@ -496,6 +482,20 @@
             this.emailDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
             this.emailDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // mainformBindingSource5
+            // 
+            this.mainformBindingSource5.DataMember = "mainform";
+            this.mainformBindingSource5.DataSource = this.presentationDataSet8;
+            // 
+            // presentationDataSet8
+            // 
+            this.presentationDataSet8.DataSetName = "PresentationDataSet8";
+            this.presentationDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mainformTableAdapter5
+            // 
+            this.mainformTableAdapter5.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -547,8 +547,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.presentationDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainformBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.presentationDataSet8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainformBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.presentationDataSet8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

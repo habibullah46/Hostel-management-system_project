@@ -21,10 +21,10 @@ namespace Presentation
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-            string Pindi = "INSERT INTO Pindi VALUES('" + txt_cnic.Text + "','" + txt_name.Text + "','" + txt_dob.Text + "','" + cmb_gender.Text + "','" + cmb_address.Text + "','" + txt_email.Text + "')";
-            string Kotli = "INSERT INTO kolti VALUES('"+txt_cnic.Text+"','"+txt_name.Text+"','"+txt_dob.Text+"','"+cmb_gender.Text+"','"+cmb_address.Text+"','"+txt_email.Text+"')";
-            string mainQuerry = "INSERT INTO mainform VALUES('" + txt_cnic.Text + "','" + txt_name.Text + "','" + txt_dob.Text + "','" + cmb_gender.Text + "','" + cmb_address.Text + "','" + txt_email.Text + "')";
-            string mirpure = "INSERT INTO mirpure VALUES('" + txt_cnic.Text + "','" + txt_name.Text + "','" + txt_dob.Text + "','" + cmb_gender.Text + "','" + cmb_address.Text + "','" + txt_email.Text + "')";
+            string Pindi = "INSERT INTO Pindi VALUES('" + txt_cnic.Text + "','" + txt_name.Text + "','" + txt_dob.Value + "','" + cmb_gender.Text + "','" + cmb_address.Text + "','" + txt_email.Text + "')";
+            string Kotli = "INSERT INTO kolti VALUES('"+txt_cnic.Text+"','"+txt_name.Text+"','"+txt_dob.Value+"','"+cmb_gender.Text+"','"+cmb_address.Text+"','"+txt_email.Text+"')";
+            string mainQuerry = "INSERT INTO mainform VALUES('" + txt_cnic.Text + "','" + txt_name.Text + "','" + txt_dob.Value + "','" + cmb_gender.Text + "','" + cmb_address.Text + "','" + txt_email.Text + "')";
+            string mirpure = "INSERT INTO mirpure VALUES('" + txt_cnic.Text + "','" + txt_name.Text + "','" + txt_dob.Value + "','" + cmb_gender.Text + "','" + cmb_address.Text + "','" + txt_email.Text + "')";
             // string mycon = System.Configuration.ConfigurationManager.ConnectionStrings["MYConString"].ToString();
             string mycon = System.Configuration.ConfigurationManager.ConnectionStrings["MYConstring"].ToString();
             if (cmb_address.Text == "Kotli")
