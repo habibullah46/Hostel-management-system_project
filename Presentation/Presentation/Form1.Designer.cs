@@ -53,7 +53,6 @@
             this.koltiTableAdapter = new Presentation.PresentationDataSet1TableAdapters.koltiTableAdapter();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.cmb_address = new System.Windows.Forms.ComboBox();
             this.btn_search = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -70,7 +69,7 @@
             this.presentationDataSet7 = new Presentation.PresentationDataSet7();
             this.mainformBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.mainformTableAdapter4 = new Presentation.PresentationDataSet7TableAdapters.mainformTableAdapter();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.grd_view = new System.Windows.Forms.DataGridView();
             this.cNICDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dOBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -80,6 +79,7 @@
             this.mainformBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.presentationDataSet8 = new Presentation.PresentationDataSet8();
             this.mainformTableAdapter5 = new Presentation.PresentationDataSet8TableAdapters.mainformTableAdapter();
+            this.txt_searcah = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainformBindingSource3)).BeginInit();
@@ -94,7 +94,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.mainformBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.presentationDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainformBindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_view)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainformBindingSource5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.presentationDataSet8)).BeginInit();
             this.SuspendLayout();
@@ -118,11 +118,13 @@
             // 
             // txt_cnic
             // 
-            this.txt_cnic.Location = new System.Drawing.Point(92, 287);
+            this.txt_cnic.Location = new System.Drawing.Point(92, 288);
             this.txt_cnic.MaxLength = 15;
             this.txt_cnic.Name = "txt_cnic";
             this.txt_cnic.Size = new System.Drawing.Size(157, 26);
             this.txt_cnic.TabIndex = 2;
+            this.txt_cnic.Tag = "";
+            this.txt_cnic.TextChanged += new System.EventHandler(this.txt_cnic_TextChanged);
             // 
             // label2
             // 
@@ -138,7 +140,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(26, 353);
+            this.label3.Location = new System.Drawing.Point(26, 352);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 19);
             this.label3.TabIndex = 4;
@@ -148,7 +150,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(270, 293);
+            this.label5.Location = new System.Drawing.Point(270, 292);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 19);
             this.label5.TabIndex = 8;
@@ -156,7 +158,7 @@
             // 
             // txt_email
             // 
-            this.txt_email.Location = new System.Drawing.Point(345, 350);
+            this.txt_email.Location = new System.Drawing.Point(345, 349);
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(157, 26);
             this.txt_email.TabIndex = 6;
@@ -179,7 +181,7 @@
             this.btn_save.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_save.Location = new System.Drawing.Point(92, 395);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(105, 47);
+            this.btn_save.Size = new System.Drawing.Size(105, 48);
             this.btn_save.TabIndex = 12;
             this.btn_save.Text = "Save";
             this.btn_save.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -194,7 +196,7 @@
             this.btn_clear.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_clear.Location = new System.Drawing.Point(345, 395);
             this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(105, 47);
+            this.btn_clear.Size = new System.Drawing.Size(105, 48);
             this.btn_clear.TabIndex = 13;
             this.btn_clear.Text = "Clear";
             this.btn_clear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -207,7 +209,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1499, 100);
+            this.panel1.Size = new System.Drawing.Size(1284, 100);
             this.panel1.TabIndex = 14;
             // 
             // panel2
@@ -217,14 +219,14 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1499, 100);
+            this.panel2.Size = new System.Drawing.Size(1284, 100);
             this.panel2.TabIndex = 15;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(569, 33);
+            this.label7.Location = new System.Drawing.Point(568, 32);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(395, 36);
             this.label7.TabIndex = 0;
@@ -235,9 +237,9 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.Red;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 593);
+            this.panel3.Location = new System.Drawing.Point(0, 584);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1499, 51);
+            this.panel3.Size = new System.Drawing.Size(1284, 51);
             this.panel3.TabIndex = 15;
             // 
             // mainformBindingSource3
@@ -279,7 +281,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(113, 166);
+            this.label8.Location = new System.Drawing.Point(112, 166);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(310, 36);
             this.label8.TabIndex = 17;
@@ -296,18 +298,6 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "Search:";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Kotli",
-            "Pindi",
-            "Mirpure"});
-            this.comboBox1.Location = new System.Drawing.Point(738, 131);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(234, 28);
-            this.comboBox1.TabIndex = 20;
-            // 
             // cmb_address
             // 
             this.cmb_address.FormattingEnabled = true;
@@ -316,10 +306,10 @@
             "Kotli",
             "Pindi",
             "Mirpure"});
-            this.cmb_address.Location = new System.Drawing.Point(345, 290);
+            this.cmb_address.Location = new System.Drawing.Point(345, 289);
             this.cmb_address.Name = "cmb_address";
             this.cmb_address.Size = new System.Drawing.Size(157, 28);
-            this.cmb_address.TabIndex = 21;
+            this.cmb_address.TabIndex = 6;
             // 
             // btn_search
             // 
@@ -328,9 +318,9 @@
             this.btn_search.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_search.Image = ((System.Drawing.Image)(resources.GetObject("btn_search.Image")));
             this.btn_search.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_search.Location = new System.Drawing.Point(1002, 119);
+            this.btn_search.Location = new System.Drawing.Point(1002, 118);
             this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(109, 51);
+            this.btn_search.Size = new System.Drawing.Size(110, 51);
             this.btn_search.TabIndex = 22;
             this.btn_search.Text = "Search";
             this.btn_search.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -341,7 +331,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(270, 233);
+            this.label4.Location = new System.Drawing.Point(270, 232);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 19);
             this.label4.TabIndex = 6;
@@ -354,10 +344,10 @@
             this.cmb_gender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.cmb_gender.Location = new System.Drawing.Point(345, 224);
+            this.cmb_gender.Location = new System.Drawing.Point(345, 225);
             this.cmb_gender.Name = "cmb_gender";
             this.cmb_gender.Size = new System.Drawing.Size(157, 28);
-            this.cmb_gender.TabIndex = 23;
+            this.cmb_gender.TabIndex = 4;
             // 
             // mainformTableAdapter
             // 
@@ -368,7 +358,7 @@
             this.txt_dob.Location = new System.Drawing.Point(92, 345);
             this.txt_dob.Name = "txt_dob";
             this.txt_dob.Size = new System.Drawing.Size(157, 26);
-            this.txt_dob.TabIndex = 24;
+            this.txt_dob.TabIndex = 3;
             // 
             // presentationDataSet3
             // 
@@ -416,24 +406,24 @@
             // 
             this.mainformTableAdapter4.ClearBeforeFill = true;
             // 
-            // dataGridView1
+            // grd_view
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.grd_view.AutoGenerateColumns = false;
+            this.grd_view.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grd_view.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cNICDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn,
             this.dOBDataGridViewTextBoxColumn,
             this.genderDataGridViewTextBoxColumn,
             this.addressDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.mainformBindingSource5;
-            this.dataGridView1.Location = new System.Drawing.Point(508, 176);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(958, 404);
-            this.dataGridView1.TabIndex = 25;
+            this.grd_view.DataSource = this.mainformBindingSource5;
+            this.grd_view.Location = new System.Drawing.Point(508, 175);
+            this.grd_view.Name = "grd_view";
+            this.grd_view.RowHeadersWidth = 62;
+            this.grd_view.RowTemplate.Height = 28;
+            this.grd_view.Size = new System.Drawing.Size(958, 405);
+            this.grd_view.TabIndex = 25;
             // 
             // cNICDataGridViewTextBoxColumn
             // 
@@ -497,18 +487,25 @@
             // 
             this.mainformTableAdapter5.ClearBeforeFill = true;
             // 
+            // txt_searcah
+            // 
+            this.txt_searcah.Location = new System.Drawing.Point(749, 128);
+            this.txt_searcah.Name = "txt_searcah";
+            this.txt_searcah.Size = new System.Drawing.Size(214, 26);
+            this.txt_searcah.TabIndex = 26;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1499, 644);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1284, 635);
+            this.Controls.Add(this.txt_searcah);
+            this.Controls.Add(this.grd_view);
             this.Controls.Add(this.txt_dob);
             this.Controls.Add(this.cmb_gender);
             this.Controls.Add(this.btn_search);
             this.Controls.Add(this.cmb_address);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel3);
@@ -525,8 +522,8 @@
             this.Controls.Add(this.txt_name);
             this.Controls.Add(this.label1);
             this.HelpButton = true;
-            this.MaximumSize = new System.Drawing.Size(1521, 700);
-            this.MinimumSize = new System.Drawing.Size(1521, 700);
+            this.MaximumSize = new System.Drawing.Size(1518, 691);
+            this.MinimumSize = new System.Drawing.Size(1274, 668);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Form";
@@ -546,7 +543,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.mainformBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.presentationDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainformBindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_view)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainformBindingSource5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.presentationDataSet8)).EndInit();
             this.ResumeLayout(false);
@@ -575,7 +572,6 @@
         private PresentationDataSet1TableAdapters.koltiTableAdapter koltiTableAdapter;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox cmb_address;
         private System.Windows.Forms.Button btn_search;
         private System.Windows.Forms.Label label4;
@@ -596,7 +592,7 @@
         private PresentationDataSet7 presentationDataSet7;
         private System.Windows.Forms.BindingSource mainformBindingSource4;
         private PresentationDataSet7TableAdapters.mainformTableAdapter mainformTableAdapter4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView grd_view;
         private PresentationDataSet8 presentationDataSet8;
         private System.Windows.Forms.BindingSource mainformBindingSource5;
         private PresentationDataSet8TableAdapters.mainformTableAdapter mainformTableAdapter5;
@@ -606,6 +602,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn genderDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox txt_searcah;
     }
 }
 

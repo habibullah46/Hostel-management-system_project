@@ -93,6 +93,43 @@ namespace Presentation
 
         private void btn_search_Click(object sender, EventArgs e)
         {
+            //string conn = System.Configuration.ConfigurationManager.ConnectionStrings["MYConstring"].ToString();
+            //string querry = "SELECT * FROM mainform WHERE Address = '" + cmb_address.Text + "' ";
+            //SqlConnection con = new SqlConnection(conn);
+            //con.Open();
+            //SqlCommand cmd = new SqlCommand(querry, con);
+            //SqlDataReader dr =  cmd.ExecuteReader();
+            //if(dr.Read())
+            //{
+            //    DataSet ds = new DataSet();
+
+                
+            //}
+
+
         }
+
+        private void txt_cnic_TextChanged(object sender, EventArgs e)
+        {
+
+            string input = txt_cnic.Text;
+            string formattedInput = FormatCNIC(input);
+            txt_cnic.Text = formattedInput;
+            txt_cnic.SelectionStart = txt_cnic.Text.Length; // Move the cursor to the end
+        }
+            // Define a function to format the CNIC number
+            private string FormatCNIC(string input)
+            {
+                input = input.Replace("-", ""); // Remove existing hyphens
+                if (input.Length > 5)
+                {
+                    input = input.Insert(5, "-");
+                }
+                if (input.Length > 13)
+                {
+                    input = input.Insert(13, "-");
+                }
+                return input;
+            }
     }
 }
