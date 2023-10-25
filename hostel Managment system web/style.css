@@ -18,9 +18,9 @@
 }
 .card{
     margin-top: 110px;
-    margin-left: 150px;
-    width: 300px;
-    height: 350px;
+    margin-left: 250px;
+    width: 400px;
+    height: 450px;
     float: left;
     background-color: cadetblue;
 }
@@ -35,7 +35,16 @@
     margin-top: 70px;
     margin-left: 70px;
     width: 700px;
-    height: 700px;
+    height: 650px;
     float: left;
     background-color: gray;
+}
+span{
+    color: rgb(239, 243, 233);
+    
+}
+body{
+    background-image: url('picture/backgroun.jpg') ;
+    background-position: fixed;
+    background-size: cover;
 }
