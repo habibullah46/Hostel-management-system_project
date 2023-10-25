@@ -1,0 +1,41 @@
+.color{
+    background-color: rgb(215, 29, 29);
+    height: 90px;
+    width: 100%;
+}
+.logo{
+    height: 10px;
+}
+.heading{
+    margin-left: 90px;
+    
+   
+}
+.nav{
+    background-color: cadetblue;
+    height: 50px;
+    text-align: right;
+}
+.card{
+    margin-top: 110px;
+    margin-left: 150px;
+    width: 300px;
+    height: 350px;
+    float: left;
+    background-color: cadetblue;
+}
+.MianPic{
+    margin-top: 20px;
+    margin-left: 90px;
+    width: 600px;
+    height: 950px;
+    float: left;
+}
+.Reg_form{
+    margin-top: 70px;
+    margin-left: 70px;
+    width: 700px;
+    height: 700px;
+    float: left;
+    background-color: gray;
+}
