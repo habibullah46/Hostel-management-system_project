@@ -28,11 +28,14 @@
 
       </div>
       <!---contact box-->
-      <form action="" style="text-align: center; margin-top: 200px; margin-left: 950px;" >
+      <form action=""  ></form>
+        
+      <div style="text-align: center; margin-left: 100px; margin-top: 250px;">
         <h1>Contact Information</h1>
-         <P><b>Contact number :</b> 03499196895</P>
-         <p><b>Email:</b> Azkar@gmail.com</p>
-         <p><b>Instagram:</b> Azkarulhassan44</p>
+        <P><b>Contact number :</b> 03499196895</P>
+        <p><b>Email:</b> Azkar@gmail.com</p>
+        <p><b>Instagram:</b> Azkarulhassan44</p>
+      </div>
 
 
       </form>
