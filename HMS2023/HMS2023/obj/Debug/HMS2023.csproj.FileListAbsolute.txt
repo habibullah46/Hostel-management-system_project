@@ -16,3 +16,4 @@ C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\HMS2023\HMS2023\obj\Debu
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\HMS2023\HMS2023\obj\Debug\HMS2023.Registor_new_staff.resources
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\HMS2023\HMS2023\obj\Debug\HMS2023.Main.resources
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\HMS2023\HMS2023\obj\Debug\HMS2023.Room.resources
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\HMS2023\HMS2023\obj\Debug\HMS2023.Search_Sutudet.resources

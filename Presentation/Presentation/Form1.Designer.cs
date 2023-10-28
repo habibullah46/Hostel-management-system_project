@@ -294,9 +294,9 @@
             this.label9.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(662, 135);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(60, 19);
+            this.label9.Size = new System.Drawing.Size(54, 19);
             this.label9.TabIndex = 18;
-            this.label9.Text = "Search:";
+            this.label9.Text = "Name:";
             // 
             // cmb_address
             // 
@@ -418,7 +418,7 @@
             this.addressDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn});
             this.grd_view.DataSource = this.mainformBindingSource5;
-            this.grd_view.Location = new System.Drawing.Point(508, 175);
+            this.grd_view.Location = new System.Drawing.Point(508, 173);
             this.grd_view.Name = "grd_view";
             this.grd_view.RowHeadersWidth = 62;
             this.grd_view.RowTemplate.Height = 28;

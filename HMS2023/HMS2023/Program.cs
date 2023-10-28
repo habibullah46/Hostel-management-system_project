@@ -16,7 +16,7 @@ namespace HMS2023
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new Search_Sutudet());
         }
     }
 }
