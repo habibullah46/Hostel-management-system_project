@@ -89,17 +89,18 @@ namespace Presentation
 
         private void btn_search_Click(object sender, EventArgs e)
         {
+          
+            string querry = "SELECT * FROM mainform WHERE Address LIKE '%" + txt_searcah.Text + "%' ";
             string conn = System.Configuration.ConfigurationManager.ConnectionStrings["MYConstring"].ToString();
-            string querry = "SELECT * FROM mainform WHERE Address = '" + txt_searcah.Text + "' ";
             SqlConnection con = new SqlConnection (conn);
             con.Open ();
             SqlCommand cmd = new SqlCommand (querry, con);
-            IDataReader dr =  cmd.ExecuteReader();
-            if(dr.Read())
+            SqlDataReader dr = cmd.ExecuteReader ();
+            DataTable dt = new DataTable();
+            dt.Load (dr);
+            if(dt.Rows.Count>0)
             {
-                DataSet ds = new DataSet ();
-                ds.Tables[0].ToString();
-
+                grd_view.DataSource = dt;
             }
         }
 

@@ -1,0 +1,11 @@
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\blood donor\blood donor\bin\Debug\blood donor.exe.config
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\blood donor\blood donor\bin\Debug\blood donor.exe
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\blood donor\blood donor\bin\Debug\blood donor.pdb
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\blood donor\blood donor\obj\Debug\blood donor.csproj.AssemblyReference.cache
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\blood donor\blood donor\obj\Debug\blood_donor.Properties.Resources.resources
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\blood donor\blood donor\obj\Debug\blood donor.csproj.GenerateResource.cache
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\blood donor\blood donor\obj\Debug\blood donor.csproj.CoreCompileInputs.cache
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\blood donor\blood donor\obj\Debug\blood donor.exe
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\blood donor\blood donor\obj\Debug\blood donor.pdb
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\blood donor\blood donor\obj\Debug\blood_donor.donor.resources
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\blood donor\blood donor\obj\Debug\blood_donor.patientform.resources

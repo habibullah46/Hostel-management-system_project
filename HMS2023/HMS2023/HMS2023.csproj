@@ -90,6 +90,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HMSDB2023DataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HMSDB2023DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSDB2023DataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +126,12 @@
     </Compile>
     <Compile Include="Room.Designer.cs">
       <DependentUpon>Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Room.Designer.cs">
+      <DependentUpon>Search Room.cs</DependentUpon>
     </Compile>
     <Compile Include="Search Sutudet.cs">
       <SubType>Form</SubType>
@@ -163,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Room.resx">
       <DependentUpon>Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Room.resx">
+      <DependentUpon>Search Room.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Search Sutudet.resx">
       <DependentUpon>Search Sutudet.cs</DependentUpon>
@@ -224,6 +238,17 @@
     </None>
     <None Include="HMSDB2023DataSet4.xss">
       <DependentUpon>HMSDB2023DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDB2023DataSet5.xsc">
+      <DependentUpon>HMSDB2023DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDB2023DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HMSDB2023DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HMSDB2023DataSet5.xss">
+      <DependentUpon>HMSDB2023DataSet5.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
