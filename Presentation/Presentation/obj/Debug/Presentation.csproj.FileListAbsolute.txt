@@ -2,7 +2,6 @@ C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Presentation\Presentatio
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Presentation\Presentation\bin\Debug\Presentation.exe
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Presentation\Presentation\bin\Debug\Presentation.pdb
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Presentation\Presentation\obj\Debug\Presentation.csproj.AssemblyReference.cache
-C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Presentation\Presentation\obj\Debug\Presentation.csproj.SuggestedBindingRedirects.cache
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Presentation\Presentation\obj\Debug\Presentation.Form1.resources
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Presentation\Presentation\obj\Debug\Presentation.Properties.Resources.resources
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Presentation\Presentation\obj\Debug\Presentation.csproj.GenerateResource.cache
