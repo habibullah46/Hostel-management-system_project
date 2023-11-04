@@ -56,34 +56,18 @@ namespace HMS2023
 
         private void cmb_username_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //string querry = "SELECT * FROM tbl_login WHERE Username ='" + txt_username.Text + "' ";
-            //string conn = System.Configuration.ConfigurationManager.ConnectionStrings["myconstring"].ToString();
-            //SqlConnection con = new SqlConnection(helper.constring);
-            //con.Open();
-            //SqlCommand cmd = new SqlCommand(querry, con);
-            //SqlDataReader dr = cmd.ExecuteReader();
-            //if (dr.Read())
-            //{
-            //    id = Convert.ToInt32(dr["id"].ToString());
-            //    txt_password.Text = txt_Cpassword.Text = dr["Password"].ToString();
-            //}
-            try
+            string querry = "SELECT * FROM tbl_login WHERE Username ='" + txt_username.Text + "' ";
+           // string conn = System.Configuration.ConfigurationManager.ConnectionStrings["myconstring"].ToString();
+            SqlConnection con = new SqlConnection(helper.constring);
+            con.Open();
+            SqlCommand cmd = new SqlCommand(querry, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
             {
-                string querry = "SELECT * FROM tbl_login WHERE Username = '" + txt_username.Text + "'";
-                SqlConnection con = new SqlConnection(helper.constring);
-                con.Open();
-                SqlCommand cmd = new SqlCommand(querry, con);
-                SqlDataReader dr = cmd.ExecuteReader();
-                if (dr.Read())
-                {
-                    txt_password.Text = txt_Cpassword.Text = dr["Password"].ToString();
-                }
+                id = Convert.ToInt32(dr["id"].ToString());
+                txt_password.Text = txt_Cpassword.Text = dr["Password"].ToString();
             }
-            catch (Exception ex)
-            {
-                // Handle or log the exception
-                Console.WriteLine("Error: " + ex.Message);
-            }
+
 
         }
     }
