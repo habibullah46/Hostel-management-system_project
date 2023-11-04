@@ -54,6 +54,11 @@
     <Compile Include="Assign Room.Designer.cs">
       <DependentUpon>Assign Room.cs</DependentUpon>
     </Compile>
+    <Compile Include="changepassworddataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>changepassworddataset.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +100,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HMSDB2023DataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HMSDB2023DataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSDB2023DataSet6.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +116,12 @@
     </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Password_setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Password_setting.Designer.cs">
+      <DependentUpon>Password_setting.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -139,6 +155,28 @@
     <Compile Include="Search Sutudet.Designer.cs">
       <DependentUpon>Search Sutudet.cs</DependentUpon>
     </Compile>
+    <Compile Include="Search Visitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Visitor.Designer.cs">
+      <DependentUpon>Search Visitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchstaff.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>searchstaff.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SearchVisitor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SearchVisitor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_Staff.Designer.cs">
+      <DependentUpon>Search_Staff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Visitor Entry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password_setting.resx">
+      <DependentUpon>Password_setting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -181,9 +222,26 @@
     <EmbeddedResource Include="Search Sutudet.resx">
       <DependentUpon>Search Sutudet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Search Visitor.resx">
+      <DependentUpon>Search Visitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_Staff.resx">
+      <DependentUpon>Search_Staff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Visitor Entry.resx">
       <DependentUpon>Visitor Entry.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="changepassworddataset.xsc">
+      <DependentUpon>changepassworddataset.xsd</DependentUpon>
+    </None>
+    <None Include="changepassworddataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>changepassworddataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="changepassworddataset.xss">
+      <DependentUpon>changepassworddataset.xsd</DependentUpon>
+    </None>
     <None Include="HMSDB2023DataSet.xsc">
       <DependentUpon>HMSDB2023DataSet.xsd</DependentUpon>
     </None>
@@ -250,6 +308,17 @@
     <None Include="HMSDB2023DataSet5.xss">
       <DependentUpon>HMSDB2023DataSet5.xsd</DependentUpon>
     </None>
+    <None Include="HMSDB2023DataSet6.xsc">
+      <DependentUpon>HMSDB2023DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDB2023DataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HMSDB2023DataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HMSDB2023DataSet6.xss">
+      <DependentUpon>HMSDB2023DataSet6.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -259,6 +328,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="searchstaff.xsc">
+      <DependentUpon>searchstaff.xsd</DependentUpon>
+    </None>
+    <None Include="searchstaff.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>searchstaff.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="searchstaff.xss">
+      <DependentUpon>searchstaff.xsd</DependentUpon>
+    </None>
+    <None Include="SearchVisitor.xsc">
+      <DependentUpon>SearchVisitor.xsd</DependentUpon>
+    </None>
+    <None Include="SearchVisitor.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SearchVisitor.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SearchVisitor.xss">
+      <DependentUpon>SearchVisitor.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

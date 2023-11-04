@@ -255,6 +255,7 @@
             this.label4.Size = new System.Drawing.Size(54, 19);
             this.label4.TabIndex = 26;
             this.label4.Text = "CNIC:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label2
             // 
@@ -266,6 +267,7 @@
             this.label2.Size = new System.Drawing.Size(54, 19);
             this.label2.TabIndex = 22;
             this.label2.Text = "Name:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txt_name
             // 
@@ -274,6 +276,7 @@
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(160, 26);
             this.txt_name.TabIndex = 23;
+            this.txt_name.TextChanged += new System.EventHandler(this.txt_name_TextChanged);
             // 
             // label3
             // 
@@ -285,6 +288,7 @@
             this.label3.Size = new System.Drawing.Size(96, 19);
             this.label3.TabIndex = 24;
             this.label3.Text = "Search With:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // cmb_searchwith
             // 
@@ -306,6 +310,7 @@
             this.txt_cnic.Name = "txt_cnic";
             this.txt_cnic.Size = new System.Drawing.Size(160, 26);
             this.txt_cnic.TabIndex = 27;
+            this.txt_cnic.TextChanged += new System.EventHandler(this.txt_cnic_TextChanged);
             // 
             // button1
             // 

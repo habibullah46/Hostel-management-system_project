@@ -64,6 +64,7 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.searchVisitorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -82,7 +83,7 @@
             this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1437, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1437, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -148,6 +149,7 @@
             this.searchStaffToolStripMenuItem.Name = "searchStaffToolStripMenuItem";
             this.searchStaffToolStripMenuItem.Size = new System.Drawing.Size(279, 34);
             this.searchStaffToolStripMenuItem.Text = "Search Staff";
+            this.searchStaffToolStripMenuItem.Click += new System.EventHandler(this.searchStaffToolStripMenuItem_Click);
             // 
             // roomToolStripMenuItem
             // 
@@ -163,35 +165,36 @@
             // registerRoomToolStripMenuItem
             // 
             this.registerRoomToolStripMenuItem.Name = "registerRoomToolStripMenuItem";
-            this.registerRoomToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.registerRoomToolStripMenuItem.Size = new System.Drawing.Size(230, 34);
             this.registerRoomToolStripMenuItem.Text = "Register Room";
             this.registerRoomToolStripMenuItem.Click += new System.EventHandler(this.registerRoomToolStripMenuItem_Click);
             // 
             // searchRoomToolStripMenuItem
             // 
             this.searchRoomToolStripMenuItem.Name = "searchRoomToolStripMenuItem";
-            this.searchRoomToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.searchRoomToolStripMenuItem.Size = new System.Drawing.Size(230, 34);
             this.searchRoomToolStripMenuItem.Text = "Search Room";
             this.searchRoomToolStripMenuItem.Click += new System.EventHandler(this.searchRoomToolStripMenuItem_Click);
             // 
             // editRoomToolStripMenuItem
             // 
             this.editRoomToolStripMenuItem.Name = "editRoomToolStripMenuItem";
-            this.editRoomToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.editRoomToolStripMenuItem.Size = new System.Drawing.Size(230, 34);
             this.editRoomToolStripMenuItem.Text = "Edit Room";
             // 
             // assignRoomToolStripMenuItem
             // 
             this.assignRoomToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("assignRoomToolStripMenuItem.Image")));
             this.assignRoomToolStripMenuItem.Name = "assignRoomToolStripMenuItem";
-            this.assignRoomToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.assignRoomToolStripMenuItem.Size = new System.Drawing.Size(230, 34);
             this.assignRoomToolStripMenuItem.Text = "Assign Room";
             this.assignRoomToolStripMenuItem.Click += new System.EventHandler(this.assignRoomToolStripMenuItem_Click);
             // 
             // visitorToolStripMenuItem
             // 
             this.visitorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addVisitorToolStripMenuItem});
+            this.addVisitorToolStripMenuItem,
+            this.searchVisitorToolStripMenuItem});
             this.visitorToolStripMenuItem.Name = "visitorToolStripMenuItem";
             this.visitorToolStripMenuItem.Size = new System.Drawing.Size(78, 29);
             this.visitorToolStripMenuItem.Text = "Visitor";
@@ -254,9 +257,9 @@
             this.toolStripSeparator4,
             this.toolStripButton7,
             this.toolStripSeparator5});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 36);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 33);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(136, 682);
+            this.toolStrip1.Size = new System.Drawing.Size(136, 685);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -280,6 +283,7 @@
             this.toolStripButton2.Size = new System.Drawing.Size(131, 93);
             this.toolStripButton2.Text = "Search Staff";
             this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripSeparator1
             // 
@@ -373,6 +377,13 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Al Habib Boys Hostel Skardu";
             // 
+            // searchVisitorToolStripMenuItem
+            // 
+            this.searchVisitorToolStripMenuItem.Name = "searchVisitorToolStripMenuItem";
+            this.searchVisitorToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.searchVisitorToolStripMenuItem.Text = "Search Visitor";
+            this.searchVisitorToolStripMenuItem.Click += new System.EventHandler(this.searchVisitorToolStripMenuItem_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -435,5 +446,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem searchVisitorToolStripMenuItem;
     }
 }

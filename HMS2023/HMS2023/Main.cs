@@ -70,24 +70,40 @@ namespace HMS2023
 
         private void toolStripButton6_Click(object sender, EventArgs e)
         {
-            Search_Sutudet SS = new Search_Sutudet();
-            SS.MdiParent = this;
-            SS.Show();
+            Search_Sutudet ss = new Search_Sutudet();
+            ss.Show(this);
+
         }
 
         private void searchStduentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Search_Sutudet ss = new Search_Sutudet();
-            ss.MdiParent = this;
-            ss.Show();
+            Search_Sutudet ss = new     Search_Sutudet();
+            ss.Show(this);
         }
 
         private void searchRoomToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Search_Room rm = new Search_Room();
-            rm.MdiParent = this;
-            rm.Show();
+           Search_Room rm = new Search_Room();
+            rm.Show(this);
             
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            Search_Staff ss = new Search_Staff();
+            ss.Show(this);
+        }
+
+        private void searchStaffToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Search_Staff ss = new Search_Staff();
+            ss.Show(this);
+        }
+
+        private void searchVisitorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Search_Visitor sv = new Search_Visitor();
+            sv.Show(this);
         }
     }
 }
