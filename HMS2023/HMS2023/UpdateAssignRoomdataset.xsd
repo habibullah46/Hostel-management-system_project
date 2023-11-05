@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="UpdateAssignRoomdataset" targetNamespace="http://tempuri.org/UpdateAssignRoomdataset.xsd" xmlns:mstns="http://tempuri.org/UpdateAssignRoomdataset.xsd" xmlns="http://tempuri.org/UpdateAssignRoomdataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HMSDB2023ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HMSDB2023ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.HMS2023.Properties.Settings.GlobalReference.Default.HMSDB2023ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_AssignRoomTableAdapter" GeneratorDataComponentClassName="tbl_AssignRoomTableAdapter" Name="tbl_AssignRoom" UserDataComponentName="tbl_AssignRoomTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HMSDB2023ConnectionString (Settings)" DbObjectName="HMSDB2023.dbo.tbl_AssignRoom" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT StudentName FROM dbo.tbl_AssignRoom</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="StudentName" DataSetColumn="StudentName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="UpdateAssignRoomdataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="UpdateAssignRoomdataset" msprop:Generator_DataSetName="UpdateAssignRoomdataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_AssignRoom" msprop:Generator_RowEvHandlerName="tbl_AssignRoomRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_AssignRoomRowDeleted" msprop:Generator_RowDeletingName="tbl_AssignRoomRowDeleting" msprop:Generator_RowEvArgName="tbl_AssignRoomRowChangeEvent" msprop:Generator_TablePropName="tbl_AssignRoom" msprop:Generator_RowChangedName="tbl_AssignRoomRowChanged" msprop:Generator_RowChangingName="tbl_AssignRoomRowChanging" msprop:Generator_TableClassName="tbl_AssignRoomDataTable" msprop:Generator_RowClassName="tbl_AssignRoomRow" msprop:Generator_TableVarName="tabletbl_AssignRoom" msprop:Generator_UserTableName="tbl_AssignRoom">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StudentName" msprop:Generator_ColumnPropNameInRow="StudentName" msprop:Generator_ColumnPropNameInTable="StudentNameColumn" msprop:Generator_ColumnVarNameInTable="columnStudentName" msprop:Generator_UserColumnName="StudentName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

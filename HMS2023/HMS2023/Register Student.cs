@@ -21,7 +21,7 @@ namespace HMS2023
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-            string Querry = "INSERT INTO tbl_student VALUES('"+txt_CNIC.Text+"','"+txt_Name.Text+"','"+txt_FatherName.Text+"','"+txt_BloodGroup.Text+"','"+txt_FatherName.Text+"','"+txt_mobile.Text+"','"+txt_Institute.Text+"','"+txt_class.Text+"','"+txt_guardianName.Text+"','"+txt_GuardianNumber.Text+"','"+txt_address.Text+"','"+txt_dateOFREG.Text+"')";
+            string Querry = "INSERT INTO tbl_student VALUES('"+txt_CNIC.Text+"','"+txt_Name.Text+"','"+txt_FatherName.Text+"','"+txt_address.Text+"','"+txt_mobile.Text+"','"+txt_Institute.Text+"','"+txt_class.Text+ "','"+txt_dateOFREG.Text+"','"+txt_dateOFBirth.Text+"','"+txt_BloodGroup.Text+"', '"+ txt_guardianName.Text+"','"+txt_GuardianNumber.Text+"')";
             hp.OpenCon();
             hp.NonQuerryExecute(Querry);
             hp.CloseCon();

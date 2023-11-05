@@ -110,6 +110,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HMSDB2023DataSet7.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HMSDB2023DataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSDB2023DataSet8.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,11 +192,33 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>udpatevisitor.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Update Assign Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Assign Room.Designer.cs">
+      <DependentUpon>Update Assign Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Register.Designer.cs">
+      <DependentUpon>Update Register.cs</DependentUpon>
+    </Compile>
     <Compile Include="Update Visitor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Update Visitor.Designer.cs">
       <DependentUpon>Update Visitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAssignRoomdataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateAssignRoomdataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="updateRegister.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>updateRegister.xsd</DependentUpon>
     </Compile>
     <Compile Include="updatevisitor.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -248,6 +275,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Search_Staff.resx">
       <DependentUpon>Search_Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update Assign Room.resx">
+      <DependentUpon>Update Assign Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update Register.resx">
+      <DependentUpon>Update Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Update Visitor.resx">
       <DependentUpon>Update Visitor.cs</DependentUpon>
@@ -354,6 +387,17 @@
     <None Include="HMSDB2023DataSet7.xss">
       <DependentUpon>HMSDB2023DataSet7.xsd</DependentUpon>
     </None>
+    <None Include="HMSDB2023DataSet8.xsc">
+      <DependentUpon>HMSDB2023DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDB2023DataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HMSDB2023DataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HMSDB2023DataSet8.xss">
+      <DependentUpon>HMSDB2023DataSet8.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -395,6 +439,28 @@
     </None>
     <None Include="udpatevisitor.xss">
       <DependentUpon>udpatevisitor.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateAssignRoomdataset.xsc">
+      <DependentUpon>UpdateAssignRoomdataset.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateAssignRoomdataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateAssignRoomdataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateAssignRoomdataset.xss">
+      <DependentUpon>UpdateAssignRoomdataset.xsd</DependentUpon>
+    </None>
+    <None Include="updateRegister.xsc">
+      <DependentUpon>updateRegister.xsd</DependentUpon>
+    </None>
+    <None Include="updateRegister.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>updateRegister.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="updateRegister.xss">
+      <DependentUpon>updateRegister.xsd</DependentUpon>
     </None>
     <None Include="updatevisitor.xsc">
       <DependentUpon>updatevisitor.xsd</DependentUpon>

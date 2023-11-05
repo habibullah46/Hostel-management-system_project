@@ -21,3 +21,5 @@ C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\HMS2023\HMS2023\obj\Debu
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\HMS2023\HMS2023\obj\Debug\HMS2023.Search_Visitor.resources
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\HMS2023\HMS2023\obj\Debug\HMS2023.Password_setting.resources
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\HMS2023\HMS2023\obj\Debug\HMS2023.Update_Visitor.resources
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\HMS2023\HMS2023\obj\Debug\HMS2023.Update_Assign_Room.resources
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\HMS2023\HMS2023\obj\Debug\HMS2023.Update_Register.resources
