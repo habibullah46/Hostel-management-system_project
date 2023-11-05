@@ -105,6 +105,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HMSDB2023DataSet6.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HMSDB2023DataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSDB2023DataSet7.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +182,22 @@
     <Compile Include="Search_Staff.Designer.cs">
       <DependentUpon>Search_Staff.cs</DependentUpon>
     </Compile>
+    <Compile Include="udpatevisitor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>udpatevisitor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Update Visitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Visitor.Designer.cs">
+      <DependentUpon>Update Visitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatevisitor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>updatevisitor.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Visitor Entry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -227,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Search_Staff.resx">
       <DependentUpon>Search_Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update Visitor.resx">
+      <DependentUpon>Update Visitor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Visitor Entry.resx">
       <DependentUpon>Visitor Entry.cs</DependentUpon>
@@ -319,6 +343,17 @@
     <None Include="HMSDB2023DataSet6.xss">
       <DependentUpon>HMSDB2023DataSet6.xsd</DependentUpon>
     </None>
+    <None Include="HMSDB2023DataSet7.xsc">
+      <DependentUpon>HMSDB2023DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDB2023DataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HMSDB2023DataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HMSDB2023DataSet7.xss">
+      <DependentUpon>HMSDB2023DataSet7.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -349,6 +384,28 @@
     </None>
     <None Include="SearchVisitor.xss">
       <DependentUpon>SearchVisitor.xsd</DependentUpon>
+    </None>
+    <None Include="udpatevisitor.xsc">
+      <DependentUpon>udpatevisitor.xsd</DependentUpon>
+    </None>
+    <None Include="udpatevisitor.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>udpatevisitor.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="udpatevisitor.xss">
+      <DependentUpon>udpatevisitor.xsd</DependentUpon>
+    </None>
+    <None Include="updatevisitor.xsc">
+      <DependentUpon>updatevisitor.xsd</DependentUpon>
+    </None>
+    <None Include="updatevisitor.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>updatevisitor.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="updatevisitor.xss">
+      <DependentUpon>updatevisitor.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

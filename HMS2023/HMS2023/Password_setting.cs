@@ -56,19 +56,42 @@ namespace HMS2023
 
         private void cmb_username_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string querry = "SELECT * FROM tbl_login WHERE Username ='" + txt_username.Text + "' ";
-           // string conn = System.Configuration.ConfigurationManager.ConnectionStrings["myconstring"].ToString();
-            SqlConnection con = new SqlConnection(helper.constring);
+            string querry = "SELECT * FROM tbl_login WHERE Username ='" + cmb_Cusername.Text+ "' ";
+            string conn = System.Configuration.ConfigurationManager.ConnectionStrings["myconstring"].ToString();
+            SqlConnection con = new SqlConnection(conn);
             con.Open();
             SqlCommand cmd = new SqlCommand(querry, con);
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
             {
-                id = Convert.ToInt32(dr["id"].ToString());
-                txt_password.Text = txt_Cpassword.Text = dr["Password"].ToString();
+                MessageBox.Show("Data is reading");
+                txt_password.Text = dr["Password"].ToString();
+            }
+            else
+            {
+                MessageBox.Show("Data Not Read");
             }
 
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if(txt_Cpassword.Text.Equals(txt_password.Text))
+            {
+                string UpdateQuerry = "UPDATE tbl_login SET Password = '" + txt_password.Text + "'Where Id='" + id + "'";
+                SqlConnection con = new SqlConnection(helper.constring);
+                con.Open();
+                SqlCommand cmd = new SqlCommand(UpdateQuerry, con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("UpDate Record Sucessfully!!");
+
+            }
+            else
+            {
+                MessageBox.Show("Password and confirm Password is not Mataching!!", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+         
         }
     }
 }

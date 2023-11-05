@@ -93,7 +93,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(636, 30);
+            this.label6.Location = new System.Drawing.Point(746, 20);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(210, 20);
             this.label6.TabIndex = 1;

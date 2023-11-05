@@ -42,12 +42,13 @@
             this.btn_save = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.cmb_username = new System.Windows.Forms.ComboBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.cmb_Cusername = new System.Windows.Forms.ComboBox();
             this.tblloginBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.changepassworddataset = new HMS2023.changepassworddataset();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_Change_ConfirmPas = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_ChangePas = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -57,16 +58,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.tbl_loginTableAdapter = new HMS2023.changepassworddatasetTableAdapters.tbl_loginTableAdapter();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblloginBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.changepassworddataset)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -192,10 +192,10 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.pictureBox2);
-            this.tabPage2.Controls.Add(this.cmb_username);
-            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.cmb_Cusername);
+            this.tabPage2.Controls.Add(this.txt_Change_ConfirmPas);
             this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.txt_ChangePas);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Controls.Add(this.button2);
@@ -208,16 +208,26 @@
             this.tabPage2.Text = "Change Password";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // cmb_username
+            // pictureBox2
             // 
-            this.cmb_username.DataSource = this.tblloginBindingSource;
-            this.cmb_username.DisplayMember = "Username";
-            this.cmb_username.FormattingEnabled = true;
-            this.cmb_username.Location = new System.Drawing.Point(468, 56);
-            this.cmb_username.Name = "cmb_username";
-            this.cmb_username.Size = new System.Drawing.Size(255, 28);
-            this.cmb_username.TabIndex = 46;
-            this.cmb_username.SelectedIndexChanged += new System.EventHandler(this.cmb_username_SelectedIndexChanged);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(6, 6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(295, 330);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 47;
+            this.pictureBox2.TabStop = false;
+            // 
+            // cmb_Cusername
+            // 
+            this.cmb_Cusername.DataSource = this.tblloginBindingSource;
+            this.cmb_Cusername.DisplayMember = "Username";
+            this.cmb_Cusername.FormattingEnabled = true;
+            this.cmb_Cusername.Location = new System.Drawing.Point(468, 56);
+            this.cmb_Cusername.Name = "cmb_Cusername";
+            this.cmb_Cusername.Size = new System.Drawing.Size(255, 28);
+            this.cmb_Cusername.TabIndex = 46;
+            this.cmb_Cusername.SelectedIndexChanged += new System.EventHandler(this.cmb_username_SelectedIndexChanged);
             // 
             // tblloginBindingSource
             // 
@@ -229,12 +239,12 @@
             this.changepassworddataset.DataSetName = "changepassworddataset";
             this.changepassworddataset.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // textBox1
+            // txt_Change_ConfirmPas
             // 
-            this.textBox1.Location = new System.Drawing.Point(468, 180);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(255, 26);
-            this.textBox1.TabIndex = 45;
+            this.txt_Change_ConfirmPas.Location = new System.Drawing.Point(468, 180);
+            this.txt_Change_ConfirmPas.Name = "txt_Change_ConfirmPas";
+            this.txt_Change_ConfirmPas.Size = new System.Drawing.Size(255, 26);
+            this.txt_Change_ConfirmPas.TabIndex = 45;
             // 
             // label5
             // 
@@ -246,12 +256,12 @@
             this.label5.TabIndex = 44;
             this.label5.Text = "Confirm Password:";
             // 
-            // textBox2
+            // txt_ChangePas
             // 
-            this.textBox2.Location = new System.Drawing.Point(468, 119);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(255, 26);
-            this.textBox2.TabIndex = 43;
+            this.txt_ChangePas.Location = new System.Drawing.Point(468, 119);
+            this.txt_ChangePas.Name = "txt_ChangePas";
+            this.txt_ChangePas.Size = new System.Drawing.Size(255, 26);
+            this.txt_ChangePas.TabIndex = 43;
             // 
             // label7
             // 
@@ -290,6 +300,7 @@
             this.button2.Text = "Save";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label8
             // 
@@ -348,16 +359,6 @@
             // 
             this.tbl_loginTableAdapter.ClearBeforeFill = true;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(295, 330);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 47;
-            this.pictureBox2.TabStop = false;
-            // 
             // Password_setting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -376,13 +377,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblloginBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.changepassworddataset)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -405,14 +406,14 @@
         private System.Windows.Forms.Button btn_save;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_Change_ConfirmPas;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_ChangePas;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox cmb_username;
+        private System.Windows.Forms.ComboBox cmb_Cusername;
         private changepassworddataset changepassworddataset;
         private System.Windows.Forms.BindingSource tblloginBindingSource;
         private changepassworddatasetTableAdapters.tbl_loginTableAdapter tbl_loginTableAdapter;
