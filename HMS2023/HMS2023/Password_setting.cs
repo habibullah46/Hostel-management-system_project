@@ -64,13 +64,11 @@ namespace HMS2023
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
             {
-                MessageBox.Show("Data is reading");
-                txt_password.Text = dr["Password"].ToString();
+
+                txt_password.Text =  dr["Password"].ToString();
+
             }
-            else
-            {
-                MessageBox.Show("Data Not Read");
-            }
+          
 
 
         }

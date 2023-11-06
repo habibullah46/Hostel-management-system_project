@@ -45,6 +45,7 @@
             this.assignRoomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visitorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addVisitorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchVisitorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,7 +65,7 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.searchVisitorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editVisitorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -118,6 +119,7 @@
             this.editStudentToolStripMenuItem.Name = "editStudentToolStripMenuItem";
             this.editStudentToolStripMenuItem.Size = new System.Drawing.Size(310, 34);
             this.editStudentToolStripMenuItem.Text = "Edit Student";
+            this.editStudentToolStripMenuItem.Click += new System.EventHandler(this.editStudentToolStripMenuItem_Click);
             // 
             // studentToolStripMenuItem1
             // 
@@ -143,6 +145,7 @@
             this.editStaffToolStripMenuItem.Name = "editStaffToolStripMenuItem";
             this.editStaffToolStripMenuItem.Size = new System.Drawing.Size(279, 34);
             this.editStaffToolStripMenuItem.Text = "Edit Staff";
+            this.editStaffToolStripMenuItem.Click += new System.EventHandler(this.editStaffToolStripMenuItem_Click);
             // 
             // searchStaffToolStripMenuItem
             // 
@@ -179,8 +182,9 @@
             // editRoomToolStripMenuItem
             // 
             this.editRoomToolStripMenuItem.Name = "editRoomToolStripMenuItem";
-            this.editRoomToolStripMenuItem.Size = new System.Drawing.Size(230, 34);
+            this.editRoomToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.editRoomToolStripMenuItem.Text = "Edit Room";
+            this.editRoomToolStripMenuItem.Click += new System.EventHandler(this.editRoomToolStripMenuItem_Click);
             // 
             // assignRoomToolStripMenuItem
             // 
@@ -194,7 +198,8 @@
             // 
             this.visitorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addVisitorToolStripMenuItem,
-            this.searchVisitorToolStripMenuItem});
+            this.searchVisitorToolStripMenuItem,
+            this.editVisitorToolStripMenuItem});
             this.visitorToolStripMenuItem.Name = "visitorToolStripMenuItem";
             this.visitorToolStripMenuItem.Size = new System.Drawing.Size(78, 29);
             this.visitorToolStripMenuItem.Text = "Visitor";
@@ -203,9 +208,16 @@
             // 
             this.addVisitorToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addVisitorToolStripMenuItem.Image")));
             this.addVisitorToolStripMenuItem.Name = "addVisitorToolStripMenuItem";
-            this.addVisitorToolStripMenuItem.Size = new System.Drawing.Size(203, 34);
+            this.addVisitorToolStripMenuItem.Size = new System.Drawing.Size(221, 34);
             this.addVisitorToolStripMenuItem.Text = "Add Visitor";
             this.addVisitorToolStripMenuItem.Click += new System.EventHandler(this.addVisitorToolStripMenuItem_Click);
+            // 
+            // searchVisitorToolStripMenuItem
+            // 
+            this.searchVisitorToolStripMenuItem.Name = "searchVisitorToolStripMenuItem";
+            this.searchVisitorToolStripMenuItem.Size = new System.Drawing.Size(221, 34);
+            this.searchVisitorToolStripMenuItem.Text = "Search Visitor";
+            this.searchVisitorToolStripMenuItem.Click += new System.EventHandler(this.searchVisitorToolStripMenuItem_Click);
             // 
             // settingToolStripMenuItem
             // 
@@ -377,12 +389,12 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Al Habib Boys Hostel Skardu";
             // 
-            // searchVisitorToolStripMenuItem
+            // editVisitorToolStripMenuItem
             // 
-            this.searchVisitorToolStripMenuItem.Name = "searchVisitorToolStripMenuItem";
-            this.searchVisitorToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.searchVisitorToolStripMenuItem.Text = "Search Visitor";
-            this.searchVisitorToolStripMenuItem.Click += new System.EventHandler(this.searchVisitorToolStripMenuItem_Click);
+            this.editVisitorToolStripMenuItem.Name = "editVisitorToolStripMenuItem";
+            this.editVisitorToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.editVisitorToolStripMenuItem.Text = "Edit Visitor";
+            this.editVisitorToolStripMenuItem.Click += new System.EventHandler(this.editVisitorToolStripMenuItem_Click);
             // 
             // Main
             // 
@@ -447,5 +459,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem searchVisitorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editVisitorToolStripMenuItem;
     }
 }

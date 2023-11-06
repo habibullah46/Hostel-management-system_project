@@ -80,6 +80,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HMSDB2023DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HMSDB2023DataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSDB2023DataSet10.xsd</DependentUpon>
+    </Compile>
     <Compile Include="HMSDB2023DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -114,6 +119,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>HMSDB2023DataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HMSDB2023DataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSDB2023DataSet9.xsd</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -187,6 +197,11 @@
     <Compile Include="Search_Staff.Designer.cs">
       <DependentUpon>Search_Staff.cs</DependentUpon>
     </Compile>
+    <Compile Include="UdpateRoom.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UdpateRoom.xsd</DependentUpon>
+    </Compile>
     <Compile Include="udpatevisitor.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -204,6 +219,18 @@
     <Compile Include="Update Register.Designer.cs">
       <DependentUpon>Update Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="Update Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Room.Designer.cs">
+      <DependentUpon>Update Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Staff.Designer.cs">
+      <DependentUpon>Update Staff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Update Visitor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +246,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>updateRegister.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStaff.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateStaff.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="updatestaff1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>updatestaff1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="updateStaffREg.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>updateStaffREg.xsd</DependentUpon>
     </Compile>
     <Compile Include="updatevisitor.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -282,6 +324,12 @@
     <EmbeddedResource Include="Update Register.resx">
       <DependentUpon>Update Register.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Update Room.resx">
+      <DependentUpon>Update Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update Staff.resx">
+      <DependentUpon>Update Staff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Update Visitor.resx">
       <DependentUpon>Update Visitor.cs</DependentUpon>
     </EmbeddedResource>
@@ -320,6 +368,17 @@
     </None>
     <None Include="HMSDB2023DataSet1.xss">
       <DependentUpon>HMSDB2023DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDB2023DataSet10.xsc">
+      <DependentUpon>HMSDB2023DataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDB2023DataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HMSDB2023DataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HMSDB2023DataSet10.xss">
+      <DependentUpon>HMSDB2023DataSet10.xsd</DependentUpon>
     </None>
     <None Include="HMSDB2023DataSet2.xsc">
       <DependentUpon>HMSDB2023DataSet2.xsd</DependentUpon>
@@ -398,6 +457,17 @@
     <None Include="HMSDB2023DataSet8.xss">
       <DependentUpon>HMSDB2023DataSet8.xsd</DependentUpon>
     </None>
+    <None Include="HMSDB2023DataSet9.xsc">
+      <DependentUpon>HMSDB2023DataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDB2023DataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HMSDB2023DataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HMSDB2023DataSet9.xss">
+      <DependentUpon>HMSDB2023DataSet9.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -428,6 +498,17 @@
     </None>
     <None Include="SearchVisitor.xss">
       <DependentUpon>SearchVisitor.xsd</DependentUpon>
+    </None>
+    <None Include="UdpateRoom.xsc">
+      <DependentUpon>UdpateRoom.xsd</DependentUpon>
+    </None>
+    <None Include="UdpateRoom.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UdpateRoom.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UdpateRoom.xss">
+      <DependentUpon>UdpateRoom.xsd</DependentUpon>
     </None>
     <None Include="udpatevisitor.xsc">
       <DependentUpon>udpatevisitor.xsd</DependentUpon>
@@ -461,6 +542,39 @@
     </None>
     <None Include="updateRegister.xss">
       <DependentUpon>updateRegister.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateStaff.xsc">
+      <DependentUpon>UpdateStaff.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateStaff.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateStaff.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateStaff.xss">
+      <DependentUpon>UpdateStaff.xsd</DependentUpon>
+    </None>
+    <None Include="updatestaff1.xsc">
+      <DependentUpon>updatestaff1.xsd</DependentUpon>
+    </None>
+    <None Include="updatestaff1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>updatestaff1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="updatestaff1.xss">
+      <DependentUpon>updatestaff1.xsd</DependentUpon>
+    </None>
+    <None Include="updateStaffREg.xsc">
+      <DependentUpon>updateStaffREg.xsd</DependentUpon>
+    </None>
+    <None Include="updateStaffREg.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>updateStaffREg.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="updateStaffREg.xss">
+      <DependentUpon>updateStaffREg.xsd</DependentUpon>
     </None>
     <None Include="updatevisitor.xsc">
       <DependentUpon>updatevisitor.xsd</DependentUpon>

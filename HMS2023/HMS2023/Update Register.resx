@@ -760,7 +760,7 @@
   <data name="btn_Clear.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        6gAAAOoB+Ss1JgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAALpSURBVFhH7ZTR
+        5gAAAOYBIly6UQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAALpSURBVFhH7ZTR
         S5NRGMYPeFkgFGpd2IVK6yZnGFQQmpWhJlrkQTTMmjnQMjEUJLPUmYa2LMullmGGFw2aTWe6oTlcmlPT
         u+yuv2R7O+96z5eBn505vaoHfvB8v53n+w4Gsf8JJ8Orp1KGV9P5ZrxdOWmk49ubgZUM4+BKRkAAfyGA
         Z2m2felbzuT9XzNBBTxLs+2LbTmL9yxlA/J8KcuKz+tBJ3/HZ5qFl67FnJQn/vN8I7qWcq1di7kQQvRw
@@ -776,7 +776,7 @@
         Ia4Cno1+/3prf/Z/LIz9BG/Fsi1RSKmwAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btn_save.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_update.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
         4wAAAOMBD+bfpwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAANCSURBVFhH7ZZd

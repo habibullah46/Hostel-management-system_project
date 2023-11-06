@@ -137,7 +137,7 @@
             this.btn_save.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
             this.btn_save.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_save.Location = new System.Drawing.Point(644, 350);
+            this.btn_save.Location = new System.Drawing.Point(665, 350);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(104, 50);
             this.btn_save.TabIndex = 46;

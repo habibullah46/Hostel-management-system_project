@@ -73,5 +73,31 @@ namespace HMS2023
                 }
             }
         }
+
+        private void btn_save_Click(object sender, EventArgs e)
+        {
+            string result = MessageBox.Show("Do You Want To Update This Record?", "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Question).ToString();
+           if(result.Equals("Yes"))
+            {
+                string update = "UPDATE  tbl_student SET Name='" + cmb_name.Text + "',FatherName='" + txt_FatherName.Text + "',Address='" + txt_address.Text + "',Mobile='" + txt_mobile.Text + "',Institute='" + txt_Institute.Text + "',Class='" + txt_class.Text + "',DateOfReg='" + txt_dateOFREG.Text + "',DOB='" + txt_dateOFBirth.Text + "',BloodGroup='" + txt_BloodGroup.Text + "',GuardianName='" + txt_guardianName.Text + "',Guardian_Number='" + txt_GuardianNumber.Text + "' WHERE CNIC='" + txt_CNIC.Text + "' ";
+                SqlConnection con = new SqlConnection(helper.constring);
+                con.Open();
+                SqlCommand cmd = new SqlCommand(update, con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Update Records Successfully","Sucessful Message",MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                foreach (var item in this.Controls)
+                {
+                    if (item is TextBox)
+                    {
+                        TextBox tb = (TextBox)item;
+                        tb.Clear();
+                    }
+                }
+            }
+           
+
+
+        }
     }
 }

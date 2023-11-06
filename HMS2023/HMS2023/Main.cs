@@ -50,15 +50,15 @@ namespace HMS2023
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
             Assign_Room rm = new Assign_Room();
-            rm.MdiParent = this;
-            rm.Show();
+   
+            rm.Show(this);
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             Visitor_Entry VE = new Visitor_Entry();
-            VE.MdiParent = this;
-            VE.Show();
+        
+            VE.Show(this);
         }
 
         private void registerRoomToolStripMenuItem_Click(object sender, EventArgs e)
@@ -104,6 +104,30 @@ namespace HMS2023
         {
             Search_Visitor sv = new Search_Visitor();
             sv.Show(this);
+        }
+
+        private void editStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           Update_Register ur = new Update_Register();
+            ur.Show(this);
+        }
+
+        private void editStaffToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Update_Staff us = new Update_Staff();   
+            us.Show(this);
+        }
+
+        private void editRoomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Update_Room ur = new Update_Room(); 
+            ur.Show(this);  
+        }
+
+        private void editVisitorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Update_Visitor uv   = new Update_Visitor(); 
+            uv.Show(this);
         }
     }
 }

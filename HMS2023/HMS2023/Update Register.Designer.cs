@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Update_Register));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Clear = new System.Windows.Forms.Button();
-            this.btn_save = new System.Windows.Forms.Button();
+            this.btn_update = new System.Windows.Forms.Button();
             this.txt_dateOFREG = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -102,20 +102,21 @@
             this.btn_Clear.UseVisualStyleBackColor = true;
             this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
-            // btn_save
+            // btn_update
             // 
-            this.btn_save.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_save.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
-            this.btn_save.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_save.Location = new System.Drawing.Point(385, 492);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(104, 50);
-            this.btn_save.TabIndex = 26;
-            this.btn_save.Text = "Update";
-            this.btn_save.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_update.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_update.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_update.Image = ((System.Drawing.Image)(resources.GetObject("btn_update.Image")));
+            this.btn_update.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_update.Location = new System.Drawing.Point(385, 492);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(104, 50);
+            this.btn_update.TabIndex = 26;
+            this.btn_update.Text = "Update";
+            this.btn_update.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // txt_dateOFREG
             // 
@@ -448,7 +449,7 @@
             this.ClientSize = new System.Drawing.Size(1174, 683);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_Clear);
-            this.Controls.Add(this.btn_save);
+            this.Controls.Add(this.btn_update);
             this.Controls.Add(this.txt_dateOFREG);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.groupBox2);
@@ -478,7 +479,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_Clear;
-        private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.DateTimePicker txt_dateOFREG;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.GroupBox groupBox2;
