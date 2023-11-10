@@ -294,9 +294,9 @@
             this.label9.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(662, 135);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(54, 19);
+            this.label9.Size = new System.Drawing.Size(42, 19);
             this.label9.TabIndex = 18;
-            this.label9.Text = "Name:";
+            this.label9.Text = "City:";
             // 
             // cmb_address
             // 
@@ -305,7 +305,7 @@
             this.cmb_address.Items.AddRange(new object[] {
             "Kotli",
             "Pindi",
-            "Mirpure"});
+            "Mirpur"});
             this.cmb_address.Location = new System.Drawing.Point(345, 289);
             this.cmb_address.Name = "cmb_address";
             this.cmb_address.Size = new System.Drawing.Size(157, 28);
