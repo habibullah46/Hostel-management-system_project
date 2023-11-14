@@ -46,6 +46,7 @@
             this.visitorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addVisitorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchVisitorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editVisitorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,7 +66,6 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.editVisitorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -97,6 +97,7 @@
             this.studentToolStripMenuItem.Name = "studentToolStripMenuItem";
             this.studentToolStripMenuItem.Size = new System.Drawing.Size(89, 29);
             this.studentToolStripMenuItem.Text = "Student";
+            this.studentToolStripMenuItem.Click += new System.EventHandler(this.studentToolStripMenuItem_Click);
             // 
             // registerStudentToolStripMenuItem
             // 
@@ -182,7 +183,7 @@
             // editRoomToolStripMenuItem
             // 
             this.editRoomToolStripMenuItem.Name = "editRoomToolStripMenuItem";
-            this.editRoomToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.editRoomToolStripMenuItem.Size = new System.Drawing.Size(230, 34);
             this.editRoomToolStripMenuItem.Text = "Edit Room";
             this.editRoomToolStripMenuItem.Click += new System.EventHandler(this.editRoomToolStripMenuItem_Click);
             // 
@@ -219,6 +220,13 @@
             this.searchVisitorToolStripMenuItem.Text = "Search Visitor";
             this.searchVisitorToolStripMenuItem.Click += new System.EventHandler(this.searchVisitorToolStripMenuItem_Click);
             // 
+            // editVisitorToolStripMenuItem
+            // 
+            this.editVisitorToolStripMenuItem.Name = "editVisitorToolStripMenuItem";
+            this.editVisitorToolStripMenuItem.Size = new System.Drawing.Size(221, 34);
+            this.editVisitorToolStripMenuItem.Text = "Edit Visitor";
+            this.editVisitorToolStripMenuItem.Click += new System.EventHandler(this.editVisitorToolStripMenuItem_Click);
+            // 
             // settingToolStripMenuItem
             // 
             this.settingToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -231,8 +239,9 @@
             // changePasswordToolStripMenuItem
             // 
             this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(254, 34);
+            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.changePasswordToolStripMenuItem.Text = "Change Password";
+            this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -388,13 +397,6 @@
             this.label1.Size = new System.Drawing.Size(370, 32);
             this.label1.TabIndex = 4;
             this.label1.Text = "Al Habib Boys Hostel Skardu";
-            // 
-            // editVisitorToolStripMenuItem
-            // 
-            this.editVisitorToolStripMenuItem.Name = "editVisitorToolStripMenuItem";
-            this.editVisitorToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.editVisitorToolStripMenuItem.Text = "Edit Visitor";
-            this.editVisitorToolStripMenuItem.Click += new System.EventHandler(this.editVisitorToolStripMenuItem_Click);
             // 
             // Main
             // 

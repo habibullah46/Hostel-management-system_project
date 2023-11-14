@@ -20,9 +20,9 @@ namespace HMS2023
 
         private void Search_Visitor_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'searchVisitor.tbl_VisitorEntry' table. You can move, or remove it, as needed.
-            this.tbl_VisitorEntryTableAdapter.Fill(this.searchVisitor.tbl_VisitorEntry);
-
+            // TODO: This line of code loads data into the 'hMSDB2023DataSet13.tbl_VisitorEntry' table. You can move, or remove it, as needed.
+            this.tbl_VisitorEntryTableAdapter.Fill(this.hMSDB2023DataSet13.tbl_VisitorEntry);
+           
         }
 
         private void cmb_searchwith_SelectedIndexChanged(object sender, EventArgs e)

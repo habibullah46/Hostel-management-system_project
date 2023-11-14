@@ -35,15 +35,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.grd_searchvisitor = new System.Windows.Forms.DataGridView();
-            this.cNICDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.visitTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.relationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.visitingToDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.visitingToCNICDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tblVisitorEntryBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.searchVisitor = new HMS2023.SearchVisitor();
-            this.tbl_VisitorEntryTableAdapter = new HMS2023.SearchVisitorTableAdapters.tbl_VisitorEntryTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.txt_scnic = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -51,11 +42,22 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_sname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.searchVisitor = new HMS2023.SearchVisitor();
+            this.hMSDB2023DataSet13 = new HMS2023.HMSDB2023DataSet13();
+            this.tblVisitorEntryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_VisitorEntryTableAdapter = new HMS2023.HMSDB2023DataSet13TableAdapters.tbl_VisitorEntryTableAdapter();
+            this.cNICDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.visitTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.relationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.visitingToCNICDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.visitingNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grd_searchvisitor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblVisitorEntryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchVisitor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblVisitorEntryBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -112,8 +114,8 @@
             this.nameDataGridViewTextBoxColumn,
             this.visitTimeDataGridViewTextBoxColumn,
             this.relationDataGridViewTextBoxColumn,
-            this.visitingToDataGridViewTextBoxColumn,
-            this.visitingToCNICDataGridViewTextBoxColumn});
+            this.visitingToCNICDataGridViewTextBoxColumn,
+            this.visitingNameDataGridViewTextBoxColumn});
             this.grd_searchvisitor.DataSource = this.tblVisitorEntryBindingSource;
             this.grd_searchvisitor.Location = new System.Drawing.Point(22, 195);
             this.grd_searchvisitor.MaximumSize = new System.Drawing.Size(1275, 409);
@@ -123,68 +125,6 @@
             this.grd_searchvisitor.RowTemplate.Height = 28;
             this.grd_searchvisitor.Size = new System.Drawing.Size(1275, 409);
             this.grd_searchvisitor.TabIndex = 6;
-            // 
-            // cNICDataGridViewTextBoxColumn
-            // 
-            this.cNICDataGridViewTextBoxColumn.DataPropertyName = "CNIC";
-            this.cNICDataGridViewTextBoxColumn.HeaderText = "CNIC";
-            this.cNICDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.cNICDataGridViewTextBoxColumn.Name = "cNICDataGridViewTextBoxColumn";
-            this.cNICDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // visitTimeDataGridViewTextBoxColumn
-            // 
-            this.visitTimeDataGridViewTextBoxColumn.DataPropertyName = "VisitTime";
-            this.visitTimeDataGridViewTextBoxColumn.HeaderText = "VisitTime";
-            this.visitTimeDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.visitTimeDataGridViewTextBoxColumn.Name = "visitTimeDataGridViewTextBoxColumn";
-            this.visitTimeDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // relationDataGridViewTextBoxColumn
-            // 
-            this.relationDataGridViewTextBoxColumn.DataPropertyName = "Relation";
-            this.relationDataGridViewTextBoxColumn.HeaderText = "Relation";
-            this.relationDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.relationDataGridViewTextBoxColumn.Name = "relationDataGridViewTextBoxColumn";
-            this.relationDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // visitingToDataGridViewTextBoxColumn
-            // 
-            this.visitingToDataGridViewTextBoxColumn.DataPropertyName = "VisitingTo";
-            this.visitingToDataGridViewTextBoxColumn.HeaderText = "VisitingTo";
-            this.visitingToDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.visitingToDataGridViewTextBoxColumn.Name = "visitingToDataGridViewTextBoxColumn";
-            this.visitingToDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // visitingToCNICDataGridViewTextBoxColumn
-            // 
-            this.visitingToCNICDataGridViewTextBoxColumn.DataPropertyName = "VisitingToCNIC";
-            this.visitingToCNICDataGridViewTextBoxColumn.HeaderText = "VisitingToCNIC";
-            this.visitingToCNICDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.visitingToCNICDataGridViewTextBoxColumn.Name = "visitingToCNICDataGridViewTextBoxColumn";
-            this.visitingToCNICDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // tblVisitorEntryBindingSource
-            // 
-            this.tblVisitorEntryBindingSource.DataMember = "tbl_VisitorEntry";
-            this.tblVisitorEntryBindingSource.DataSource = this.searchVisitor;
-            // 
-            // searchVisitor
-            // 
-            this.searchVisitor.DataSetName = "SearchVisitor";
-            this.searchVisitor.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tbl_VisitorEntryTableAdapter
-            // 
-            this.tbl_VisitorEntryTableAdapter.ClearBeforeFill = true;
             // 
             // button1
             // 
@@ -264,6 +204,73 @@
             this.label2.TabIndex = 36;
             this.label2.Text = "Name:";
             // 
+            // searchVisitor
+            // 
+            this.searchVisitor.DataSetName = "SearchVisitor";
+            this.searchVisitor.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // hMSDB2023DataSet13
+            // 
+            this.hMSDB2023DataSet13.DataSetName = "HMSDB2023DataSet13";
+            this.hMSDB2023DataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblVisitorEntryBindingSource
+            // 
+            this.tblVisitorEntryBindingSource.DataMember = "tbl_VisitorEntry";
+            this.tblVisitorEntryBindingSource.DataSource = this.hMSDB2023DataSet13;
+            // 
+            // tbl_VisitorEntryTableAdapter
+            // 
+            this.tbl_VisitorEntryTableAdapter.ClearBeforeFill = true;
+            // 
+            // cNICDataGridViewTextBoxColumn
+            // 
+            this.cNICDataGridViewTextBoxColumn.DataPropertyName = "CNIC";
+            this.cNICDataGridViewTextBoxColumn.HeaderText = "CNIC";
+            this.cNICDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.cNICDataGridViewTextBoxColumn.Name = "cNICDataGridViewTextBoxColumn";
+            this.cNICDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // visitTimeDataGridViewTextBoxColumn
+            // 
+            this.visitTimeDataGridViewTextBoxColumn.DataPropertyName = "VisitTime";
+            this.visitTimeDataGridViewTextBoxColumn.HeaderText = "VisitTime";
+            this.visitTimeDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.visitTimeDataGridViewTextBoxColumn.Name = "visitTimeDataGridViewTextBoxColumn";
+            this.visitTimeDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // relationDataGridViewTextBoxColumn
+            // 
+            this.relationDataGridViewTextBoxColumn.DataPropertyName = "Relation";
+            this.relationDataGridViewTextBoxColumn.HeaderText = "Relation";
+            this.relationDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.relationDataGridViewTextBoxColumn.Name = "relationDataGridViewTextBoxColumn";
+            this.relationDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // visitingToCNICDataGridViewTextBoxColumn
+            // 
+            this.visitingToCNICDataGridViewTextBoxColumn.DataPropertyName = "VisitingTo_CNIC";
+            this.visitingToCNICDataGridViewTextBoxColumn.HeaderText = "VisitingTo_CNIC";
+            this.visitingToCNICDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.visitingToCNICDataGridViewTextBoxColumn.Name = "visitingToCNICDataGridViewTextBoxColumn";
+            this.visitingToCNICDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // visitingNameDataGridViewTextBoxColumn
+            // 
+            this.visitingNameDataGridViewTextBoxColumn.DataPropertyName = "VisitingName";
+            this.visitingNameDataGridViewTextBoxColumn.HeaderText = "VisitingName";
+            this.visitingNameDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.visitingNameDataGridViewTextBoxColumn.Name = "visitingNameDataGridViewTextBoxColumn";
+            this.visitingNameDataGridViewTextBoxColumn.Width = 150;
+            // 
             // Search_Visitor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -287,8 +294,9 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grd_searchvisitor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblVisitorEntryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchVisitor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblVisitorEntryBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,15 +309,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView grd_searchvisitor;
-        private SearchVisitor searchVisitor;
-        private System.Windows.Forms.BindingSource tblVisitorEntryBindingSource;
-        private SearchVisitorTableAdapters.tbl_VisitorEntryTableAdapter tbl_VisitorEntryTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cNICDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn visitTimeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn relationDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn visitingToDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn visitingToCNICDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txt_scnic;
         private System.Windows.Forms.Label label4;
@@ -317,5 +316,15 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_sname;
         private System.Windows.Forms.Label label2;
+        private SearchVisitor searchVisitor;
+        private HMSDB2023DataSet13 hMSDB2023DataSet13;
+        private System.Windows.Forms.BindingSource tblVisitorEntryBindingSource;
+        private HMSDB2023DataSet13TableAdapters.tbl_VisitorEntryTableAdapter tbl_VisitorEntryTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNICDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn visitTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn relationDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn visitingToCNICDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn visitingNameDataGridViewTextBoxColumn;
     }
 }

@@ -64,8 +64,8 @@ namespace HMS2023
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
             {
-
-                txt_password.Text =  dr["Password"].ToString();
+                
+                txt_ChangePas.Text = txt_Change_ConfirmPas.Text= dr["Password"].ToString();
 
             }
           

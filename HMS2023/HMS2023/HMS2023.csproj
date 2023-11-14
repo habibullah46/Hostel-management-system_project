@@ -85,6 +85,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HMSDB2023DataSet10.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HMSDB2023DataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSDB2023DataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HMSDB2023DataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSDB2023DataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HMSDB2023DataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HMSDB2023DataSet13.xsd</DependentUpon>
+    </Compile>
     <Compile Include="HMSDB2023DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -379,6 +394,39 @@
     </None>
     <None Include="HMSDB2023DataSet10.xss">
       <DependentUpon>HMSDB2023DataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDB2023DataSet11.xsc">
+      <DependentUpon>HMSDB2023DataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDB2023DataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HMSDB2023DataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HMSDB2023DataSet11.xss">
+      <DependentUpon>HMSDB2023DataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDB2023DataSet12.xsc">
+      <DependentUpon>HMSDB2023DataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDB2023DataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HMSDB2023DataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HMSDB2023DataSet12.xss">
+      <DependentUpon>HMSDB2023DataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDB2023DataSet13.xsc">
+      <DependentUpon>HMSDB2023DataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="HMSDB2023DataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HMSDB2023DataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HMSDB2023DataSet13.xss">
+      <DependentUpon>HMSDB2023DataSet13.xsd</DependentUpon>
     </None>
     <None Include="HMSDB2023DataSet2.xsc">
       <DependentUpon>HMSDB2023DataSet2.xsd</DependentUpon>
