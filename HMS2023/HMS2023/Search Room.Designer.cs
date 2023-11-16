@@ -35,9 +35,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.grd_view = new System.Windows.Forms.DataGridView();
-            this.hMSDB2023DataSet5 = new HMS2023.HMSDB2023DataSet5();
-            this.tblRoomBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tbl_RoomTableAdapter = new HMS2023.HMSDB2023DataSet5TableAdapters.tbl_RoomTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roomNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.floorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,14 +42,17 @@
             this.attachBathDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.seatRentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.availableSeatsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblRoomBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hMSDB2023DataSet5 = new HMS2023.HMSDB2023DataSet5();
+            this.tbl_RoomTableAdapter = new HMS2023.HMSDB2023DataSet5TableAdapters.tbl_RoomTableAdapter();
             this.btn_search = new System.Windows.Forms.Button();
             this.txt_roomnumber = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grd_view)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblRoomBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -121,20 +121,6 @@
             this.grd_view.Size = new System.Drawing.Size(1114, 386);
             this.grd_view.TabIndex = 30;
             // 
-            // hMSDB2023DataSet5
-            // 
-            this.hMSDB2023DataSet5.DataSetName = "HMSDB2023DataSet5";
-            this.hMSDB2023DataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblRoomBindingSource
-            // 
-            this.tblRoomBindingSource.DataMember = "tbl_Room";
-            this.tblRoomBindingSource.DataSource = this.hMSDB2023DataSet5;
-            // 
-            // tbl_RoomTableAdapter
-            // 
-            this.tbl_RoomTableAdapter.ClearBeforeFill = true;
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -192,6 +178,20 @@
             this.availableSeatsDataGridViewTextBoxColumn.Name = "availableSeatsDataGridViewTextBoxColumn";
             this.availableSeatsDataGridViewTextBoxColumn.Width = 150;
             // 
+            // tblRoomBindingSource
+            // 
+            this.tblRoomBindingSource.DataMember = "tbl_Room";
+            this.tblRoomBindingSource.DataSource = this.hMSDB2023DataSet5;
+            // 
+            // hMSDB2023DataSet5
+            // 
+            this.hMSDB2023DataSet5.DataSetName = "HMSDB2023DataSet5";
+            this.hMSDB2023DataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tbl_RoomTableAdapter
+            // 
+            this.tbl_RoomTableAdapter.ClearBeforeFill = true;
+            // 
             // btn_search
             // 
             this.btn_search.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -247,8 +247,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grd_view)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblRoomBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
