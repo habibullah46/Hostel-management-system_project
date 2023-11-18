@@ -49,14 +49,14 @@
             this.btn_Clear = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.cmb_roomnumber = new System.Windows.Forms.ComboBox();
-            this.udpateRoom = new HMS2023.UdpateRoom();
             this.tblRoomBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.udpateRoom = new HMS2023.UdpateRoom();
             this.tbl_RoomTableAdapter = new HMS2023.UdpateRoomTableAdapters.tbl_RoomTableAdapter();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.udpateRoom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblRoomBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.udpateRoom)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_Availableseats
@@ -275,15 +275,15 @@
             this.cmb_roomnumber.TabIndex = 58;
             this.cmb_roomnumber.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // udpateRoom
-            // 
-            this.udpateRoom.DataSetName = "UdpateRoom";
-            this.udpateRoom.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // tblRoomBindingSource
             // 
             this.tblRoomBindingSource.DataMember = "tbl_Room";
             this.tblRoomBindingSource.DataSource = this.udpateRoom;
+            // 
+            // udpateRoom
+            // 
+            this.udpateRoom.DataSetName = "UdpateRoom";
+            this.udpateRoom.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tbl_RoomTableAdapter
             // 
@@ -319,8 +319,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.udpateRoom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblRoomBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.udpateRoom)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

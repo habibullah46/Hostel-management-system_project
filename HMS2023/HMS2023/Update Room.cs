@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -46,28 +47,93 @@ namespace HMS2023
 
         private void btn_update_Click(object sender, EventArgs e)
         {
-           DialogResult d= MessageBox.Show("Do You Want To Update This Records","Confirmation",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
-            if (d == DialogResult.Yes)
+            if(errorvalidation())
             {
-                string update = "UPDATE tbl_Room SET RoomNumber='" + cmb_roomnumber.Text + "',Floor='" + txt_flour.Text + "',Type='" + cmb_type.Text + "',Attach_Bath='" + cmb_AttachBAth.Text + "',SeatRent='" + txt_Rentseat.Text + "',Available_Seats='" + txt_Availableseats.Text + "'WHERE RoomNumber='" + cmb_roomnumber.Text + "'";
-                SqlConnection con = new SqlConnection(helper.constring);
-                con.Open();
-                SqlCommand cmd = new SqlCommand(update, con);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Update Records Successfully","Sucessful Message", MessageBoxButtons.OK,MessageBoxIcon.Information);
-                foreach (var room in this.Controls)
-                {
-                    if(room is TextBox)
-                    {
-                        TextBox t = (TextBox)room;
-                        t.Clear();
-                    }
-                
-                }
+                return;
+
             }
+            else
+            {
+              
+                try
+                {
+                    DialogResult d = MessageBox.Show("Do You Want To Update This Records", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (d == DialogResult.Yes)
+                    {
+                        string update = "UPDATE tbl_Room SET RoomNumber='" + cmb_roomnumber.Text + "',Floor='" + txt_flour.Text + "',Type='" + cmb_type.Text + "',Attach_Bath='" + cmb_AttachBAth.Text + "',SeatRent='" + txt_Rentseat.Text + "',Available_Seats='" + txt_Availableseats.Text + "'WHERE RoomNumber='" + cmb_roomnumber.Text + "'";
+
+                        SqlConnection con = new SqlConnection(helper.constring);
+                        con.Open();
+                        SqlCommand cmd = new SqlCommand(update, con);
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Update Records Successfully", "Sucessful Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        foreach (var room in this.Controls)
+                        {
+                            if (room is TextBox)
+                            {
+                                TextBox t = (TextBox)room;
+                                t.Clear();
+                            }
+
+                        }
+                    }
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show($"Error in user input.\n\n\nDevelopers information: \n {ex.ToString()}");
+
+                }
+
+
+            }
+          
            
         }
+        //error provider code
+        private bool errorvalidation()
+        {
+            ErrorProvider er = new ErrorProvider();
 
+            bool flag = true;
+            if(string.IsNullOrEmpty(cmb_roomnumber.Text))
+            {
+                flag = false;
+                er.SetError(cmb_roomnumber, "Enter Room number");
+            }
+            else if (string .IsNullOrEmpty(cmb_type.Text))
+            { 
+                flag = false;
+                er.SetError(txt_flour, "Enter flour");
+             }
+            else if (string.IsNullOrEmpty(cmb_type.Text))
+            {
+                flag = false;
+                er.SetError(cmb_type, "Enter Type ");
+            }
+            else if (string.IsNullOrEmpty (cmb_AttachBAth.Text))
+            {
+                flag = false;
+                er.SetError(cmb_AttachBAth,"Enter AttachBath");
+            }
+            else if (string.IsNullOrEmpty(txt_Rentseat.Text))
+            {
+                flag = false;
+                er.SetError(txt_Rentseat, "Enter SeatRent");
+            }
+            else if(string.IsNullOrEmpty(txt_Availableseats.Text)) 
+            {
+                flag = false;
+                er.SetError(txt_Availableseats, "Enter AvailableSeat");
+            }
+            else
+            {
+
+                flag = true;
+                er.Clear();
+            }
+            return flag;
+           
+        }
         private void btn_Clear_Click(object sender, EventArgs e)
         {
             DialogResult d = MessageBox.Show("Do You Want To Delete This Records", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);

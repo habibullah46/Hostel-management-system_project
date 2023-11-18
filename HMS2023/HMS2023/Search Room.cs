@@ -30,20 +30,34 @@ namespace HMS2023
 
         private void btn_search_Click(object sender, EventArgs e)
         {
-            string querry = "SELECT * FROM tbl_Room WHERE RoomNumber ='" + txt_roomnumber.Text + "'";
-            string conn = System.Configuration.ConfigurationManager.ConnectionStrings["myconstring"].ToString();
-            SqlConnection con = new SqlConnection(conn);
-            con.Open();
-            SqlCommand cmd = new SqlCommand(querry, con);
-            SqlDataReader dr =  cmd.ExecuteReader();
-            DataTable dt = new DataTable();
-            dt.Load(dr);
-            if(dt.Rows.Count > 0 )
+            if(errorvalidation())
             {
-                grd_view.DataSource = dt;   
-            }
 
+                string querry = "SELECT * FROM tbl_Room WHERE RoomNumber ='" + txt_roomnumber.Text + "'";
+                string conn = System.Configuration.ConfigurationManager.ConnectionStrings["myconstring"].ToString();
+                SqlConnection con = new SqlConnection(conn);
+                con.Open();
+                SqlCommand cmd = new SqlCommand(querry, con);
+                SqlDataReader dr = cmd.ExecuteReader();
+                DataTable dt = new DataTable();
+                dt.Load(dr);
+                if (dt.Rows.Count > 0)
+                {
+                    grd_view.DataSource = dt;
+                }
+               
+            }
         }
-       
+       private bool errorvalidation()
+        {
+            ErrorProvider ep = new ErrorProvider(); 
+            bool flag = false;
+            if(string.IsNullOrEmpty(txt_roomnumber.Text))
+            {
+                flag = true;
+                ep.SetError(txt_roomnumber,"Enter RoomNumber!");
+            }
+            return true;
+        }
     }
 }
