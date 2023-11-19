@@ -19,7 +19,7 @@ namespace HMS2023
         {
             InitializeComponent();
         }
-
+        helper hp = new helper();
         private void Assign_Room_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'hMSDB2023DataSet3.tbl_Room' table. You can move, or remove it, as needed.
@@ -61,18 +61,69 @@ namespace HMS2023
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-            string Querry = "INSERT INTO tbl_AssignRoom VALUES('"+cmb_StudentCNIC.Text+ "','"+txt_StudentName.Text+"','"+txt_AvialbleSeat.Text+"')";
-           
-            helper hp = new helper();
-            hp.OpenCon();
-            hp.NonQuerryExecute(Querry);
-            int NumberOfSeats = Convert.ToInt32(txt_AvialbleSeat.Text);
-            NumberOfSeats = NumberOfSeats - 1;
-            string UpdateQerry = "UPDATE tbl_Room SET Available_Seats = '" + NumberOfSeats +"' Where RoomNumber = '" + cmb_RoomNo.Text + "'";
-            hp.NonQuerryExecute(UpdateQerry);
-            hp.CloseCon();
-            My_Message.success("Assign Room ");
+            if(eroorvalidation())
+            {
+                return;
+            }
+            else
+            {
+                string Querry = "INSERT INTO tbl_AssignRoom VALUES('" + cmb_StudentCNIC.Text + "','" + txt_StudentName.Text + "','" + txt_AvialbleSeat.Text + "')";
+                try
+                {
+                   
+                    hp.OpenCon();
+                    hp.NonQuerryExecute(Querry);
+                    int NumberOfSeats = Convert.ToInt32(txt_AvialbleSeat.Text);
+                    NumberOfSeats = NumberOfSeats - 1;
+                    string UpdateQerry = "UPDATE tbl_Room SET Available_Seats = '" + NumberOfSeats + "' Where RoomNumber = '" + cmb_RoomNo.Text + "'";
+                    hp.NonQuerryExecute(UpdateQerry);
+                    hp.CloseCon();
+                    My_Message.success("Assign Room ");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error in user input.\n\n\nDevelopers information: \n {ex.ToString()}");
 
+                }
+                finally
+                {
+                    hp.CloseCon();
+                }
+            }
+
+        
+
+        }
+        private bool eroorvalidation()
+        {
+            ErrorProvider er = new ErrorProvider();
+            bool flag = true;
+            if(string.IsNullOrEmpty(cmb_StudentCNIC.Text))
+            {
+                flag = false;
+                er.SetError(cmb_StudentCNIC, "Enter StudentCNIC");
+            }
+            else if(string.IsNullOrEmpty (txt_StudentName.Text))
+                {
+                flag = false;
+                er.SetError(txt_StudentName, "Enter Student Name");
+            }
+            else if (string.IsNullOrEmpty(cmb_RoomNo.Text))
+            {
+                flag = false;
+                er.SetError(cmb_RoomNo, "Enter Room Number");
+            }
+            else if (string.IsNullOrEmpty(txt_AvialbleSeat.Text))
+            {
+                flag = false;
+                er.SetError(txt_AvialbleSeat, "Enter Available Seat");
+            }
+            else
+            {
+                flag = true;
+                er.Clear();
+            }
+            return flag;
         }
     }
 }

@@ -64,8 +64,8 @@ namespace HMS2023
         private void registerRoomToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Room rm = new Room();
-            rm.MdiParent = this;
-            rm.Show();
+           
+            rm.Show(this);
         }
 
         private void toolStripButton6_Click(object sender, EventArgs e)

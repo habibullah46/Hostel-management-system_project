@@ -45,9 +45,17 @@ namespace HMS2023
                     MessageBox.Show($"Error in user input.\n\n\nDevelopers information: \n {ex.ToString()}");
                 }
                 finally { hp.CloseCon(); }
+              
 
             }
-
+            foreach (var room in this.Controls)
+            {
+                if(room is TextBox)
+                {
+                    TextBox tb = (TextBox)room;
+                    tb.Clear();
+                }
+            }
 
         }
         private bool Errorvalidation()
