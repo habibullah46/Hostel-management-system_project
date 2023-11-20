@@ -33,6 +33,13 @@ namespace HMS2023
             hp.CloseCon();
             My_Message.success("Visitor Entry");
         }
-        
+
+        private void btn_Clear_Click(object sender, EventArgs e)
+        {
+            txt_Studentname.Clear();
+            txt_Visitor_name.Clear();
+            txt_VRelation.Clear();
+            
+        }
     }
 }

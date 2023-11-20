@@ -61,15 +61,9 @@ namespace HMS2023
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-            if(eroorvalidation())
-            {
-                return;
-            }
-            else
-            {
+           
                 string Querry = "INSERT INTO tbl_AssignRoom VALUES('" + cmb_StudentCNIC.Text + "','" + txt_StudentName.Text + "','" + txt_AvialbleSeat.Text + "')";
-                try
-                {
+               
                    
                     hp.OpenCon();
                     hp.NonQuerryExecute(Querry);
@@ -79,17 +73,16 @@ namespace HMS2023
                     hp.NonQuerryExecute(UpdateQerry);
                     hp.CloseCon();
                     My_Message.success("Assign Room ");
-                }
-                catch (Exception ex)
+            foreach (var item in this.Controls)
+            {
+                if(item is TextBox)
                 {
-                    MessageBox.Show($"Error in user input.\n\n\nDevelopers information: \n {ex.ToString()}");
-
-                }
-                finally
-                {
-                    hp.CloseCon();
+                    TextBox t = (TextBox)item;  
+                    t.Clear();
                 }
             }
+             
+          
 
         
 
@@ -124,6 +117,19 @@ namespace HMS2023
                 er.Clear();
             }
             return flag;
+        }
+
+        private void btn_Clear_Click(object sender, EventArgs e)
+        {
+            foreach (var item in this.Controls)
+            {
+                if(item is TextBox)
+                {
+                    TextBox txt = (TextBox)item;
+                    txt.Clear();
+                }
+
+            }
         }
     }
 }

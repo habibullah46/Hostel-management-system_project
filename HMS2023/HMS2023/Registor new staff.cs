@@ -27,6 +27,18 @@ namespace HMS2023
             SqlCommand cmd = new SqlCommand(querry, con);
             cmd.ExecuteNonQuery();
             My_Message.success("Register New Staff ");
+           
+        }
+
+        private void btn_Clear_Click(object sender, EventArgs e)
+        {
+            txt_CNIC.Clear();
+            txt_Name.Clear();
+                txt_FatherName.Clear();
+            txt_mobile.Clear();
+          txt_address.Clear();
+            txt_BloodGroup .Clear();
+            
         }
     }
 }

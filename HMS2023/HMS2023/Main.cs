@@ -130,15 +130,15 @@ namespace HMS2023
             uv.Show(this);
         }
 
-        private void studentToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Password_setting ps = new Password_setting();
             ps.Show(this);
+        }
+
+        private void studentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

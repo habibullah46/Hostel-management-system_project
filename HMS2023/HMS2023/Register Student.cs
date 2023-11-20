@@ -26,6 +26,24 @@ namespace HMS2023
             hp.NonQuerryExecute(Querry);
             hp.CloseCon();
             My_Message.success("Register Student ");
+
+            this.Hide();
+            Assign_Room ar = new Assign_Room();
+            ar.Show(this);
+        }
+
+        private void btn_Clear_Click(object sender, EventArgs e)
+        {
+            txt_CNIC.Clear();
+            txt_Name.Clear();   
+            txt_FatherName.Clear();
+            txt_address.Clear();
+            txt_mobile.Clear(); 
+            txt_Institute.Clear();
+            txt_BloodGroup.Clear();
+            txt_guardianName.Clear();
+            txt_GuardianNumber.Clear();
+            txt_CNIC.Focus();
         }
     }
 }
