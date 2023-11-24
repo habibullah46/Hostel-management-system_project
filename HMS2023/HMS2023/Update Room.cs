@@ -16,6 +16,7 @@ namespace HMS2023
 {
     public partial class Update_Room : Form
     {
+        ErrorProvider er = new ErrorProvider();
         public Update_Room()
         {
             InitializeComponent();
@@ -49,12 +50,8 @@ namespace HMS2023
         {
             if(errorvalidation())
             {
-                return;
 
-            }
-            else
-            {
-              
+
                 try
                 {
                     DialogResult d = MessageBox.Show("Do You Want To Update This Records", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
@@ -78,13 +75,20 @@ namespace HMS2023
                         }
                     }
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show($"Error in user input.\n\n\nDevelopers information: \n {ex.ToString()}");
 
                 }
+                finally
+                {
+                    Close();
+                }
 
-
+            }
+            else
+            {
+                return;
             }
           
            
@@ -92,14 +96,15 @@ namespace HMS2023
         //error provider code
         private bool errorvalidation()
         {
-            ErrorProvider er = new ErrorProvider();
+           
 
             bool flag = true;
             if(string.IsNullOrEmpty(cmb_roomnumber.Text))
             {
                 flag = false;
                 er.SetError(cmb_roomnumber, "Enter Room number");
-            }
+               
+             }
             else if (string .IsNullOrEmpty(cmb_type.Text))
             { 
                 flag = false;
@@ -129,7 +134,7 @@ namespace HMS2023
             {
 
                 flag = true;
-                er.Clear();
+               er.Clear();
             }
             return flag;
            
