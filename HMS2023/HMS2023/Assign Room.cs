@@ -22,6 +22,8 @@ namespace HMS2023
         helper hp = new helper();
         private void Assign_Room_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'hMSDB2023DataSet14.tbl_AssignRoom' table. You can move, or remove it, as needed.
+            this.tbl_AssignRoomTableAdapter.Fill(this.hMSDB2023DataSet14.tbl_AssignRoom);
             // TODO: This line of code loads data into the 'hMSDB2023DataSet3.tbl_Room' table. You can move, or remove it, as needed.
             this.tbl_RoomTableAdapter.Fill(this.hMSDB2023DataSet3.tbl_Room);
             // TODO: This line of code loads data into the 'hMSDB2023DataSet2.tbl_student' table. You can move, or remove it, as needed.
@@ -61,26 +63,48 @@ namespace HMS2023
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-           
+            if(eroorvalidation())
+            {
+                return;
+
+            }
+            else
+            {
                 string Querry = "INSERT INTO tbl_AssignRoom VALUES('" + cmb_StudentCNIC.Text + "','" + txt_StudentName.Text + "','" + txt_AvialbleSeat.Text + "')";
-               
-                   
+                try
+                {
+
                     hp.OpenCon();
                     hp.NonQuerryExecute(Querry);
                     int NumberOfSeats = Convert.ToInt32(txt_AvialbleSeat.Text);
                     NumberOfSeats = NumberOfSeats - 1;
                     string UpdateQerry = "UPDATE tbl_Room SET Available_Seats = '" + NumberOfSeats + "' Where RoomNumber = '" + cmb_RoomNo.Text + "'";
+
                     hp.NonQuerryExecute(UpdateQerry);
                     hp.CloseCon();
                     My_Message.success("Assign Room ");
-            foreach (var item in this.Controls)
-            {
-                if(item is TextBox)
+                    foreach (var item in this.Controls)
+                    {
+                        if (item is TextBox)
+                        {
+                            TextBox t = (TextBox)item;
+                            t.Clear();
+                        }
+                    }
+                }
+                catch (Exception ex)
                 {
-                    TextBox t = (TextBox)item;  
-                    t.Clear();
+  
+                    MessageBox.Show($" Error in user input.\n\n\nDevelopers information: \n {ex.ToString()}");
+                }
+                finally
+                {
+                    hp.CloseCon();
                 }
             }
+              
+               
+                  
              
           
 
@@ -93,7 +117,7 @@ namespace HMS2023
             bool flag = true;
             if(string.IsNullOrEmpty(cmb_StudentCNIC.Text))
             {
-                flag = false;
+                flag = true;
                 er.SetError(cmb_StudentCNIC, "Enter StudentCNIC");
             }
             else if(string.IsNullOrEmpty (txt_StudentName.Text))

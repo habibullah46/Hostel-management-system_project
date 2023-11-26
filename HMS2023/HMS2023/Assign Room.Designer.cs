@@ -51,6 +51,16 @@
             this.hMSDB2023DataSet3 = new HMS2023.HMSDB2023DataSet3();
             this.tbl_studentTableAdapter = new HMS2023.HMSDB2023DataSet2TableAdapters.tbl_studentTableAdapter();
             this.tbl_RoomTableAdapter = new HMS2023.HMSDB2023DataSet3TableAdapters.tbl_RoomTableAdapter();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.hMSDB2023DataSet14 = new HMS2023.HMSDB2023DataSet14();
+            this.tblAssignRoomBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_AssignRoomTableAdapter = new HMS2023.HMSDB2023DataSet14TableAdapters.tbl_AssignRoomTableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentCNICDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,24 +68,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblRoomBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblAssignRoomBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(0, 391);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 465);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(643, 59);
+            this.panel2.Size = new System.Drawing.Size(1490, 59);
             this.panel2.TabIndex = 5;
             // 
             // label6
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Right;
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(383, 30);
+            this.label6.Location = new System.Drawing.Point(1280, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(210, 20);
             this.label6.TabIndex = 0;
@@ -83,33 +96,32 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(643, 105);
+            this.panel1.Size = new System.Drawing.Size(1490, 105);
             this.panel1.TabIndex = 4;
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(210, 31);
+            this.label1.Location = new System.Drawing.Point(550, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(296, 55);
             this.label1.TabIndex = 0;
             this.label1.Text = "Assign Room";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(280, 135);
+            this.label2.Location = new System.Drawing.Point(274, 173);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 19);
             this.label2.TabIndex = 6;
@@ -118,7 +130,7 @@
             // txt_StudentName
             // 
             this.txt_StudentName.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_StudentName.Location = new System.Drawing.Point(404, 178);
+            this.txt_StudentName.Location = new System.Drawing.Point(398, 216);
             this.txt_StudentName.Name = "txt_StudentName";
             this.txt_StudentName.ReadOnly = true;
             this.txt_StudentName.Size = new System.Drawing.Size(160, 26);
@@ -129,7 +141,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(280, 181);
+            this.label3.Location = new System.Drawing.Point(274, 219);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 19);
             this.label3.TabIndex = 8;
@@ -140,7 +152,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(280, 227);
+            this.label4.Location = new System.Drawing.Point(274, 265);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 19);
             this.label4.TabIndex = 10;
@@ -149,7 +161,7 @@
             // txt_AvialbleSeat
             // 
             this.txt_AvialbleSeat.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_AvialbleSeat.Location = new System.Drawing.Point(404, 270);
+            this.txt_AvialbleSeat.Location = new System.Drawing.Point(398, 308);
             this.txt_AvialbleSeat.Name = "txt_AvialbleSeat";
             this.txt_AvialbleSeat.ReadOnly = true;
             this.txt_AvialbleSeat.Size = new System.Drawing.Size(160, 26);
@@ -160,7 +172,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(281, 273);
+            this.label5.Location = new System.Drawing.Point(275, 311);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 19);
             this.label5.TabIndex = 12;
@@ -173,7 +185,7 @@
             this.btn_Clear.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Clear.Image = ((System.Drawing.Image)(resources.GetObject("btn_Clear.Image")));
             this.btn_Clear.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Clear.Location = new System.Drawing.Point(458, 321);
+            this.btn_Clear.Location = new System.Drawing.Point(452, 359);
             this.btn_Clear.Name = "btn_Clear";
             this.btn_Clear.Size = new System.Drawing.Size(113, 50);
             this.btn_Clear.TabIndex = 6;
@@ -189,7 +201,7 @@
             this.btn_save.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
             this.btn_save.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_save.Location = new System.Drawing.Point(330, 321);
+            this.btn_save.Location = new System.Drawing.Point(324, 359);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(104, 50);
             this.btn_save.TabIndex = 5;
@@ -202,7 +214,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 126);
+            this.pictureBox1.Location = new System.Drawing.Point(6, 164);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(237, 245);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -215,7 +227,7 @@
             this.cmb_StudentCNIC.DataSource = this.tblstudentBindingSource;
             this.cmb_StudentCNIC.DisplayMember = "CNIC";
             this.cmb_StudentCNIC.FormattingEnabled = true;
-            this.cmb_StudentCNIC.Location = new System.Drawing.Point(404, 126);
+            this.cmb_StudentCNIC.Location = new System.Drawing.Point(398, 164);
             this.cmb_StudentCNIC.Name = "cmb_StudentCNIC";
             this.cmb_StudentCNIC.Size = new System.Drawing.Size(160, 28);
             this.cmb_StudentCNIC.TabIndex = 1;
@@ -237,7 +249,7 @@
             this.cmb_RoomNo.DataSource = this.tblRoomBindingSource;
             this.cmb_RoomNo.DisplayMember = "RoomNumber";
             this.cmb_RoomNo.FormattingEnabled = true;
-            this.cmb_RoomNo.Location = new System.Drawing.Point(404, 218);
+            this.cmb_RoomNo.Location = new System.Drawing.Point(398, 256);
             this.cmb_RoomNo.Name = "cmb_RoomNo";
             this.cmb_RoomNo.Size = new System.Drawing.Size(160, 28);
             this.cmb_RoomNo.TabIndex = 3;
@@ -261,12 +273,78 @@
             // 
             this.tbl_RoomTableAdapter.ClearBeforeFill = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.studentCNICDataGridViewTextBoxColumn,
+            this.studentNameDataGridViewTextBoxColumn,
+            this.roomNumberDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.tblAssignRoomBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(571, 164);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(914, 245);
+            this.dataGridView1.TabIndex = 22;
+            // 
+            // hMSDB2023DataSet14
+            // 
+            this.hMSDB2023DataSet14.DataSetName = "HMSDB2023DataSet14";
+            this.hMSDB2023DataSet14.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblAssignRoomBindingSource
+            // 
+            this.tblAssignRoomBindingSource.DataMember = "tbl_AssignRoom";
+            this.tblAssignRoomBindingSource.DataSource = this.hMSDB2023DataSet14;
+            // 
+            // tbl_AssignRoomTableAdapter
+            // 
+            this.tbl_AssignRoomTableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // studentCNICDataGridViewTextBoxColumn
+            // 
+            this.studentCNICDataGridViewTextBoxColumn.DataPropertyName = "StudentCNIC";
+            this.studentCNICDataGridViewTextBoxColumn.HeaderText = "StudentCNIC";
+            this.studentCNICDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.studentCNICDataGridViewTextBoxColumn.Name = "studentCNICDataGridViewTextBoxColumn";
+            this.studentCNICDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // studentNameDataGridViewTextBoxColumn
+            // 
+            this.studentNameDataGridViewTextBoxColumn.DataPropertyName = "StudentName";
+            this.studentNameDataGridViewTextBoxColumn.HeaderText = "StudentName";
+            this.studentNameDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.studentNameDataGridViewTextBoxColumn.Name = "studentNameDataGridViewTextBoxColumn";
+            this.studentNameDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // roomNumberDataGridViewTextBoxColumn
+            // 
+            this.roomNumberDataGridViewTextBoxColumn.DataPropertyName = "RoomNumber";
+            this.roomNumberDataGridViewTextBoxColumn.HeaderText = "RoomNumber";
+            this.roomNumberDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.roomNumberDataGridViewTextBoxColumn.Name = "roomNumberDataGridViewTextBoxColumn";
+            this.roomNumberDataGridViewTextBoxColumn.Width = 150;
+            // 
             // Assign_Room
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(643, 450);
+            this.ClientSize = new System.Drawing.Size(1490, 524);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.cmb_RoomNo);
             this.Controls.Add(this.cmb_StudentCNIC);
             this.Controls.Add(this.pictureBox1);
@@ -280,8 +358,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.MaximumSize = new System.Drawing.Size(665, 506);
-            this.MinimumSize = new System.Drawing.Size(665, 506);
             this.Name = "Assign_Room";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Assign_Room";
@@ -295,6 +371,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblRoomBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblAssignRoomBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -323,5 +402,15 @@
         private HMSDB2023DataSet3 hMSDB2023DataSet3;
         private System.Windows.Forms.BindingSource tblRoomBindingSource;
         private HMSDB2023DataSet3TableAdapters.tbl_RoomTableAdapter tbl_RoomTableAdapter;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
+        private HMSDB2023DataSet14 hMSDB2023DataSet14;
+        private System.Windows.Forms.BindingSource tblAssignRoomBindingSource;
+        private HMSDB2023DataSet14TableAdapters.tbl_AssignRoomTableAdapter tbl_AssignRoomTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn studentCNICDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn studentNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn roomNumberDataGridViewTextBoxColumn;
     }
 }
