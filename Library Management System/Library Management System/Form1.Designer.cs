@@ -47,7 +47,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(150, 50);
+            this.pictureBox1.Location = new System.Drawing.Point(156, 45);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(154, 146);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -60,7 +60,7 @@
             this.txt_username.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_username.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_username.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txt_username.Location = new System.Drawing.Point(130, 265);
+            this.txt_username.Location = new System.Drawing.Point(157, 254);
             this.txt_username.Name = "txt_username";
             this.txt_username.Size = new System.Drawing.Size(207, 21);
             this.txt_username.TabIndex = 1;
@@ -73,7 +73,7 @@
             this.txt_password.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_password.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_password.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txt_password.Location = new System.Drawing.Point(130, 328);
+            this.txt_password.Location = new System.Drawing.Point(157, 317);
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(207, 21);
             this.txt_password.TabIndex = 2;
@@ -83,7 +83,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(66, 250);
+            this.pictureBox2.Location = new System.Drawing.Point(93, 239);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(60, 48);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -93,7 +93,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(62, 316);
+            this.pictureBox3.Location = new System.Drawing.Point(89, 305);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(64, 48);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -103,7 +103,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel1.Location = new System.Drawing.Point(130, 287);
+            this.panel1.Location = new System.Drawing.Point(157, 276);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(207, 3);
             this.panel1.TabIndex = 5;
@@ -111,7 +111,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel2.Location = new System.Drawing.Point(130, 352);
+            this.panel2.Location = new System.Drawing.Point(157, 341);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(208, 3);
             this.panel2.TabIndex = 6;
@@ -122,7 +122,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(130, 417);
+            this.button1.Location = new System.Drawing.Point(157, 406);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(208, 39);
             this.button1.TabIndex = 7;
@@ -135,7 +135,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Yellow;
-            this.button2.Location = new System.Drawing.Point(129, 487);
+            this.button2.Location = new System.Drawing.Point(156, 476);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(208, 39);
             this.button2.TabIndex = 8;
