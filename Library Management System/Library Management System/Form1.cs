@@ -31,12 +31,30 @@ namespace Library_Management_System
             if(txt_password.Text =="Password")
             {
                 txt_password.Clear();
+                //txt_password.PasswordChar = '*';
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close ();  
+        }
+
+        private void chkbox_CheckedChanged(object sender, EventArgs e)
+        {
+            if(chkbox.CheckState==CheckState.Checked)
+            {
+                txt_password.UseSystemPasswordChar = false;
+            }
+            else if (chkbox.CheckState==CheckState.Unchecked)
+            {
+                txt_password.UseSystemPasswordChar= true;
+            }
+        }
+
+        private void txt_password_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
