@@ -9,3 +9,5 @@ C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Library Management Syste
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Library Management System\Library Management System\obj\Debug\Library Management System.exe
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Library Management System\Library Management System\obj\Debug\Library Management System.pdb
 C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Library Management System\Library Management System\obj\Debug\Library_Management_System.Dash_Board.resources
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Library Management System\Library Management System\obj\Debug\Library_Management_System.AddBook.resources
+C:\Users\TIME COMPUTER\Desktop\Hostel-management-system\Library Management System\Library Management System\obj\Debug\Library_Management_System.viewBook.resources
