@@ -44,5 +44,19 @@ namespace Library_Management_System
                 len = 0;
             }
         }
+
+        private void addNewBooksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
+            AddBook ab = new AddBook();
+            ab.Show(this);
+
+        }
+
+        private void viewBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            viewBook vb = new viewBook();
+            vb.Show(this);  
+        }
     }
 }
