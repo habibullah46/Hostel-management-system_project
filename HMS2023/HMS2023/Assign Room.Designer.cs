@@ -52,15 +52,15 @@
             this.tbl_studentTableAdapter = new HMS2023.HMSDB2023DataSet2TableAdapters.tbl_studentTableAdapter();
             this.tbl_RoomTableAdapter = new HMS2023.HMSDB2023DataSet3TableAdapters.tbl_RoomTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
-            this.hMSDB2023DataSet14 = new HMS2023.HMSDB2023DataSet14();
-            this.tblAssignRoomBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tbl_AssignRoomTableAdapter = new HMS2023.HMSDB2023DataSet14TableAdapters.tbl_AssignRoomTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentCNICDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roomNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblAssignRoomBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hMSDB2023DataSet14 = new HMS2023.HMSDB2023DataSet14();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.tbl_AssignRoomTableAdapter = new HMS2023.HMSDB2023DataSet14TableAdapters.tbl_AssignRoomTableAdapter();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,8 +69,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblRoomBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblAssignRoomBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet14)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -291,20 +291,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(914, 245);
             this.dataGridView1.TabIndex = 22;
             // 
-            // hMSDB2023DataSet14
-            // 
-            this.hMSDB2023DataSet14.DataSetName = "HMSDB2023DataSet14";
-            this.hMSDB2023DataSet14.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblAssignRoomBindingSource
-            // 
-            this.tblAssignRoomBindingSource.DataMember = "tbl_AssignRoom";
-            this.tblAssignRoomBindingSource.DataSource = this.hMSDB2023DataSet14;
-            // 
-            // tbl_AssignRoomTableAdapter
-            // 
-            this.tbl_AssignRoomTableAdapter.ClearBeforeFill = true;
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -337,6 +323,20 @@
             this.roomNumberDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.roomNumberDataGridViewTextBoxColumn.Name = "roomNumberDataGridViewTextBoxColumn";
             this.roomNumberDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // tblAssignRoomBindingSource
+            // 
+            this.tblAssignRoomBindingSource.DataMember = "tbl_AssignRoom";
+            this.tblAssignRoomBindingSource.DataSource = this.hMSDB2023DataSet14;
+            // 
+            // hMSDB2023DataSet14
+            // 
+            this.hMSDB2023DataSet14.DataSetName = "HMSDB2023DataSet14";
+            this.hMSDB2023DataSet14.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tbl_AssignRoomTableAdapter
+            // 
+            this.tbl_AssignRoomTableAdapter.ClearBeforeFill = true;
             // 
             // Assign_Room
             // 
@@ -372,8 +372,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblRoomBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblAssignRoomBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hMSDB2023DataSet14)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

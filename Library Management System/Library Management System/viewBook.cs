@@ -52,11 +52,17 @@ namespace Library_Management_System
             }
             panel2.Visible = true;
             string connection = System.Configuration.ConfigurationManager.ConnectionStrings["myconnecton"].ToString();
-            string querry = "SELECT * FROM AddBook Where"
+            string querry = "SELECT * FROM AddBook";
             SqlConnection con = new SqlConnection(connection);
             con.Open();
-            SqlCommand cmd = new SqlCommand();
-            
+            SqlCommand cmd = new SqlCommand(querry,con );
+            SqlDataReader dr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(dr);
+            if (dt.Rows.Count > 0)
+            {
+                txt_bookname.Text = dr["BookName"].ToString();
+            }
             
         }
     }
